@@ -3,7 +3,6 @@ repo_url: https://odianlp.github.io
 strict: false
 
 nav:
-  - Introduction: introduction.md
   - Purpose: purpose.md
   - Projects:
     - Machine Translation:

@@ -32,8 +32,9 @@ The entire pipeline can be divided into two parts:
 
 ## Ingestion
 Inserting parallel pairs to create the Machine Learning model. You can checkout the following diagram for the entire flow of the Ingestion pipeline.
-
-![Ingestion Pipeline](Ingestion_pipeline.png)
+<p align="center">
+  <img width="560" height="400" src="/images/Ingestion_pipeline.png">
+</p>
 
 ### Data Collection
 This part deals with collecting data from multiple sources. The data can be processed parallel pairs or in raw format. In a high level classification let us divide the process into three parts:
