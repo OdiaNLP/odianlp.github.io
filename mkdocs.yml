@@ -1,0 +1,31 @@
+site_name: OdiaNLP
+repo_url: https://odianlp.github.io
+strict: false
+
+nav:
+  - Introduction: introduction.md
+  - Purpose: purpose.md
+  - Projects:
+    - Machine Translation:
+        - Progress: Machine_Translation/progress.md
+        - Ingestion pipeline flow: Machine_Translation/MT_Flow_Pipeline.md
+    - Wishlist: possible_projects.md
+  - Blogs:
+      - Sentence Alignment: Machine_Translation/sentence_alignment.md
+  - Contributions: contributions.md
+  - Contributors: contributors.md
+
+
+theme:
+  name: material
+  collapse_by_default: true
+  highlights: true
+
+plugins:
+  - search # necessary for search to work
+  - git-revision-date-localized:
+      type: timeago
+
+markdown_extensions:
+  - toc:
+      permalink: "#"

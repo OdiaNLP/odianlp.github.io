@@ -1,0 +1,19 @@
+language: python
+
+python: 3.8
+
+branches:
+  only:
+    - master
+
+script: true
+
+before_deploy:
+    - mkdocs build --clean
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: site
+  on:
+    branch: master
