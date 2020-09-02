@@ -1,0 +1,1015 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Ingestion pipeline flow - OdiaNLP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  
+        <style>
+        .git-revision-date-localized-plugin-iso_date { display: none }
+        @media print {
+           .git-revision-date-localized-plugin-iso_date { display: inline } 
+           .git-revision-date-localized-plugin-timeago { display: none } 
+        }
+        </style>
+        </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#machine-translation-flow-pipeline" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="OdiaNLP" class="md-header-nav__button md-logo" aria-label="OdiaNLP">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            OdiaNLP
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Ingestion pipeline flow
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OdiaNLP" class="md-nav__button md-logo" aria-label="OdiaNLP">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    OdiaNLP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../purpose/" title="Purpose" class="md-nav__link">
+      Purpose
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Projects
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projects" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Machine Translation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Machine Translation" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Machine Translation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Ingestion pipeline flow
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Ingestion pipeline flow" class="md-nav__link md-nav__link--active">
+      Ingestion pipeline flow
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    Update log
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-terms" class="md-nav__link">
+    Important Terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestion" class="md-nav__link">
+    Ingestion
+  </a>
+  
+    <nav class="md-nav" aria-label="Ingestion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    Data Collection
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-active-agentsbots" class="md-nav__link">
+    1. Active Agents/Bots
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Active Agents/Bots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-batch-data-collectors" class="md-nav__link">
+    2. Batch data collectors
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Batch data collectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-community-generated-corpus" class="md-nav__link">
+    3. Community generated corpus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-preprocessing" class="md-nav__link">
+    Data Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-license-verification" class="md-nav__link">
+    1. Data License verification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-cleaning" class="md-nav__link">
+    2. Data Cleaning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-data-alignment" class="md-nav__link">
+    3. Data Alignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-metadata-addition" class="md-nav__link">
+    4. Metadata addition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-threshold-filtering" class="md-nav__link">
+    5. Threshold Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-classification-of-the-pairs" class="md-nav__link">
+    6. Classification of the pairs
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Classification of the pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-business-domain-based" class="md-nav__link">
+    1. Business domain based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-morphology-based" class="md-nav__link">
+    2. Morphology based
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-standard" class="md-nav__link">
+    Raw --&gt; Standard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query" class="md-nav__link">
+    Query
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../possible_projects/" title="Wishlist" class="md-nav__link">
+      Wishlist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Blogs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Blogs" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Blogs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sentence_alignment/" title="Sentence Alignment" class="md-nav__link">
+      Sentence Alignment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/" title="Contributions" class="md-nav__link">
+      Contributions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributors/" title="Contributors" class="md-nav__link">
+      Contributors
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    Update log
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-terms" class="md-nav__link">
+    Important Terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestion" class="md-nav__link">
+    Ingestion
+  </a>
+  
+    <nav class="md-nav" aria-label="Ingestion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    Data Collection
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-active-agentsbots" class="md-nav__link">
+    1. Active Agents/Bots
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Active Agents/Bots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-batch-data-collectors" class="md-nav__link">
+    2. Batch data collectors
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Batch data collectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-community-generated-corpus" class="md-nav__link">
+    3. Community generated corpus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-preprocessing" class="md-nav__link">
+    Data Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-license-verification" class="md-nav__link">
+    1. Data License verification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-cleaning" class="md-nav__link">
+    2. Data Cleaning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-data-alignment" class="md-nav__link">
+    3. Data Alignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-metadata-addition" class="md-nav__link">
+    4. Metadata addition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-threshold-filtering" class="md-nav__link">
+    5. Threshold Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-classification-of-the-pairs" class="md-nav__link">
+    6. Classification of the pairs
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Classification of the pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-business-domain-based" class="md-nav__link">
+    1. Business domain based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-morphology-based" class="md-nav__link">
+    2. Morphology based
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-standard" class="md-nav__link">
+    Raw --&gt; Standard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query" class="md-nav__link">
+    Query
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <p><a href="https://soumendrak.github.io/MTEnglish2Odia/">Home page</a> | <a href="https://soumendrak.github.io/MTEnglish2Odia/MT_Flow_Pipleine">MT_Flow_Pipleine</a> |
+<a href="https://soumendrak.github.io/MTEnglish2Odia/possible_projects">Wishlist</a></p>
+<h1 id="machine-translation-flow-pipeline">Machine Translation Flow Pipeline<a class="headerlink" href="#machine-translation-flow-pipeline" title="Permanent link">#</a></h1>
+<h3 id="update-log">Update log<a class="headerlink" href="#update-log" title="Permanent link">#</a></h3>
+<ul>
+<li>Date | Version | Author | Change details  </li>
+<li>22nd Sept'19 | 0.01 | Soumendra Kumar Sahoo | Initial draft created</li>
+</ul>
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">#</a></h2>
+<p>This document explains to various pipeline flows for training and querying of English to Odia the translation.
+I have tried to explain the concepts as low level as possible for an amateur technical person.</p>
+<h2 id="important-terms">Important Terms<a class="headerlink" href="#important-terms" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Parallel pairs</strong>:  English and Odia text pairs with same meaning.</li>
+<li><strong>Corpus</strong>: A Data set with relevant text data</li>
+<li><strong>Translation</strong>: Converting meaning of a text in one language to another language.</li>
+<li><strong>Transliteration</strong>: Converting pronunciation of a text from one language to another.</li>
+<li><strong>Machine Translation</strong>: Automatic Machine learning based translation</li>
+<li><strong>Phrase</strong>: Part of a sentence without any particular meaning.</li>
+<li>Neural Machine Translation: Deep learning based automatic machine translation.</li>
+<li><strong>Agent</strong>: Bot.</li>
+<li><strong>Crawler</strong>: Move from one website to another website like a Spider.</li>
+<li><strong>Domain</strong>: Business level like Healthcare, IT, Tourism, Religious text, etc.</li>
+<li><strong>POS tags</strong>: Part of speech tags like Noun, Verb etc.</li>
+<li><strong>NER</strong>: Named Entity Recognition like Person, Organization, Place, etc.</li>
+<li><strong>Parse</strong>: Extracting information</li>
+</ul>
+<p>The entire pipeline can be divided into two parts:<br />
+1. Ingestion &amp;
+2. Querying</p>
+<h2 id="ingestion">Ingestion<a class="headerlink" href="#ingestion" title="Permanent link">#</a></h2>
+<p>Inserting parallel pairs to create the Machine Learning model. You can checkout the following diagram for the entire flow of the Ingestion pipeline.
+<p align="center">
+  <img width="560" height="400" src="/images/Ingestion_pipeline.png">
+</p></p>
+<h3 id="data-collection">Data Collection<a class="headerlink" href="#data-collection" title="Permanent link">#</a></h3>
+<p>This part deals with collecting data from multiple sources. The data can be processed parallel pairs or in raw format. In a high level classification let us divide the process into three parts:</p>
+<ol>
+<li>Continuous data collectors or Active Agents &amp;</li>
+<li>One time/Batch data collectors</li>
+<li>Community generated corpus</li>
+</ol>
+<h4 id="1-active-agentsbots">1. Active Agents/Bots<a class="headerlink" href="#1-active-agentsbots" title="Permanent link">#</a></h4>
+<p>Agents means Bots, which will be running continuously 24x7 or a specific period of time to find out prospective parallel pairs. There can be many types of Agents:</p>
+<ol>
+<li>News website crawlers<br />
+<em>: Collecting and matching the headlines/content of the News websites across En and Or</em></li>
+<li>Localized website crawlers<br />
+<em>: Websites which are translated into English as well as Odia</em></li>
+<li>Social Media Tweets/Posts across Twitter/Facebook.<br />
+<em>: People posting Tweets/Posts in social media across multiple languages</em></li>
+</ol>
+<h5 id="process">Process<a class="headerlink" href="#process" title="Permanent link">#</a></h5>
+<p>It may consists of the following steps:<br />
+1. Get a list of prospective 
+   1. News websites
+   2. Localized Websites &amp;
+   3. Social media Accounts
+2. Crawl through the content from present to past posts.
+3. Detect Odia text<br />
+<em>We can write an Odia Matra detector</em>
+4. Detect the parallel English text. This can be achieved by:
+   1. Matching Dictionary based words
+   2. Followed by sentences
+   3. Transliteration can help here too to match the Pronouns.</p>
+<h4 id="2-batch-data-collectors">2. Batch data collectors<a class="headerlink" href="#2-batch-data-collectors" title="Permanent link">#</a></h4>
+<p>The cases where we will get the data from a specific location that needs to be accessed for a short time period until we collect the entire data. This may be an one time activity or long source data refresh period. For example:</p>
+<ol>
+<li>Wikipedia Dumps<br />
+<em>: Wikipedia generates En-Or paragraph aligned dumps every week.</em></li>
+<li>Open sourced repositories/papers describing the location to collect the data</li>
+</ol>
+<h5 id="process_1">Process<a class="headerlink" href="#process_1" title="Permanent link">#</a></h5>
+<p>The detecting of the data set is completely manual process. There is no need of automate that also. May be for the Wikipedia dump we can run an Agent in a weekly schedule to get only the incremental data.<br />
+The flow will be:<br />
+1. manually detect the data set
+2. Write a Data collector to get the data from the location or manually download the data set from that location.</p>
+<p>That's it. The Data collector work is done.</p>
+<h4 id="3-community-generated-corpus">3. Community generated corpus<a class="headerlink" href="#3-community-generated-corpus" title="Permanent link">#</a></h4>
+<p>Other than the above two methods of collecting the data. We will need help from the community to manually prepare the data. We may need data in following categories:
+1. Parallel pairs
+2. Parallel pairs with POS tags &amp;
+3. Parallel pairs with Named Entity Recognition (NER) data
+4. Parallel pairs with domain classification</p>
+<p>These are not distinct categories. That means Parallel pairs are mandatory to provide. The rest all POS, NER and Domain are optional. If community can provide pairs with all POS, NER and Domain, that data will be treated as pure Gold.<br />
+The format to collect the POS, NER and Domain information yet to be decided.</p>
+<h3 id="data-preprocessing">Data Preprocessing<a class="headerlink" href="#data-preprocessing" title="Permanent link">#</a></h3>
+<p>The data we receive in the Collection phase are most likely not in the desired format and needs to be processed with additional metadata information to bring the collections into a standard format. These methods to convert raw data into standard format will happen at this stage.</p>
+<p>There are many crucial steps:<br />
+1. Data License verification
+2. Data cleaning
+   1. HTML/CSS tags removal
+   2. Punctuation removal
+   3. English word removal from the Odia part of the pair
+3. Alignment (Phrase, Sentence, Paragraph)
+4. Metadata generation/addition
+   1. POS tags
+   2. NER
+5. Filtering out the pairs based on a threshold.
+6. Classification
+   1. Business domain based (IT, Religion, Tourism, Politics, etc.)
+   2. Morphology based (Word, Phrase, Sentence, Paragraph, etc.)
+7. Converting the input raw format into standard format</p>
+<p>Let is go though these steps individually:</p>
+<h4 id="1-data-license-verification">1. Data License verification<a class="headerlink" href="#1-data-license-verification" title="Permanent link">#</a></h4>
+<ol>
+<li>The data which we will receive through the Data collectors need to be checked.</li>
+<li>Provide proper Attributions wherever needed.</li>
+<li>Weed out the corpus where proper license is not there.</li>
+<li>Contact the original authors in case needed.</li>
+</ol>
+<p>Licensing is a crucial thing in Open source projects. Therefore, should not be taken lightly. Legal obligations may need to be faced if not handled smartly.</p>
+<h4 id="2-data-cleaning">2. Data Cleaning<a class="headerlink" href="#2-data-cleaning" title="Permanent link">#</a></h4>
+<p>The data we received need to go through a set of cleaning steps before going further.<br />
+1. Remove duplicates from the corpus.
+2. For the initial days, we may need to remove the punctuation marks from the pairs. later on during tune up we may need to enable the punctuation marks.
+3. HTML and CSS tags are definitely need to be removed. A program can be written for this.
+4. It may occur that there might be English words present in the Odia part of the pair. May be due to Brand name or Trademark. In these cases we may need to use 
+   1. Keep it as it is (Recommendation) or
+      1. NER and POS will come into the picture here.
+      2. it will identify if the English word is a Pronoun.
+      3. If Yes, keep it, else try out other two options.
+   2. Transliteration to substitute the English word into Odia.
+   3. Remove that sentence
+5. Again remove duplicates from the corpus. In fact we should remove duplicates after each step to reduce the workload on the next steps.</p>
+<h4 id="3-data-alignment">3. Data Alignment<a class="headerlink" href="#3-data-alignment" title="Permanent link">#</a></h4>
+<p>Alignment of the pairs is the crucial part of this process. An entire codebase can be written to align the pairs. We have thousands of corpus lying around unusable due to this Alignment issue. The Alignment can be done based on the original text Morphology.
+1. A dictionary based approach (matching words across the pairs) might be tried to align the sentences. However a strong plan needs to be created.</p>
+<h4 id="4-metadata-addition">4. Metadata addition<a class="headerlink" href="#4-metadata-addition" title="Permanent link">#</a></h4>
+<p>Odia does not have any open source free auto POS tagger or NER taggers. There is word2vec present, which I need to test though. In combination of these features the translation accuracy will shoot up.<br />
+For this I has asked these info from the community in the Data collection phase.</p>
+<h4 id="5-threshold-filtering">5. Threshold Filtering<a class="headerlink" href="#5-threshold-filtering" title="Permanent link">#</a></h4>
+<p>After all these steps there will be a threshold set to analyze the validity and uniqueness of the pair.
+The threshold can be set based on:<br />
+1. Number of minimum letters need to be present in a sentence pair.
+2. Number of minimum words need to be present in a sentence pair.
+3. Percentage of English letters in an Odia part of the pair.
+4. Minimum number of high weight POS tags like Nouns/Adjectives/Pronouns/Verbs needed to be declared as a valid pair.</p>
+<p>If any pair unable to pass any of the above conditions, should be filtered out.</p>
+<h4 id="6-classification-of-the-pairs">6. Classification of the pairs<a class="headerlink" href="#6-classification-of-the-pairs" title="Permanent link">#</a></h4>
+<h5 id="1-business-domain-based">1. Business domain based<a class="headerlink" href="#1-business-domain-based" title="Permanent link">#</a></h5>
+<p>We can not make a swiss army knife for any kind of translation done by a generic model. We have to find our niche domain. For the initial stage it may be the domain on which we get the maximum number of pairs.<br />
+This concept is very critical and need to understood at early stage. You can not train with Agriculture data and want to test those with Medical terms. The result will be pathetic.<br />
+Thats why those MT models who grow initially pick a specific sector and specialize on that first. If we need to specialize in generic Hi, Bye terms we need to weed out the other domain specific data pairs.<br />
+Due to this reason the domain based classification is critical during the processing phase both for the MT model and business too.  </p>
+<h5 id="2-morphology-based">2. Morphology based<a class="headerlink" href="#2-morphology-based" title="Permanent link">#</a></h5>
+<p>We need to classify the pairs into words, phrases and sentences.</p>
+<h4 id="raw-standard">Raw --&gt; Standard<a class="headerlink" href="#raw-standard" title="Permanent link">#</a></h4>
+<p>Convert the format to standard format and make any changes if needed to the data which will be used further on the training process.</p>
+<h2 id="query">Query<a class="headerlink" href="#query" title="Permanent link">#</a></h2>
+<p>Checking:
+- Check the minimum number of letters/words/POS tags
+- Likelihood of finding a translation
+  - Depends on many parameters</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This Website's documentation work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2020-09-02T08:07:21+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2020-09-02</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../progress/" title="Progress" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Progress
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../possible_projects/" title="Wishlist" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Wishlist
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.locales.min.js"></script>
+          <script>
+            var nodes = document.querySelectorAll('.timeago');
+            var locale = nodes[0].getAttribute('locale');
+            timeago.render(nodes, locale);
+          </script>
+        </body>
+</html>
