@@ -17,7 +17,7 @@ before_deploy:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: ${{ secrets.GITHUB_TOKEN }}
+  github_token: ${PERSONAL_TOKEN}
   github_url: github.io
   local_dir: site
   on:
