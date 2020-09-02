@@ -1,0 +1,915 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Progress - OdiaNLP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  
+        <style>
+        .git-revision-date-localized-plugin-iso_date { display: none }
+        @media print {
+           .git-revision-date-localized-plugin-iso_date { display: inline } 
+           .git-revision-date-localized-plugin-timeago { display: none } 
+        }
+        </style>
+        </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-so-far" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="OdiaNLP" class="md-header-nav__button md-logo" aria-label="OdiaNLP">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            OdiaNLP
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Progress
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OdiaNLP" class="md-nav__button md-logo" aria-label="OdiaNLP">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    OdiaNLP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../purpose/" title="Purpose" class="md-nav__link">
+      Purpose
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Major ongoing projects
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Major ongoing projects" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Major ongoing projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Machine Translation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Machine Translation" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Machine Translation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Progress
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Progress" class="md-nav__link md-nav__link--active">
+      Progress
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-so-far" class="md-nav__link">
+    Analysis so far:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-roadmap" class="md-nav__link">
+    High level Roadmap
+  </a>
+  
+    <nav class="md-nav" aria-label="High level Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completed-in-december-2018" class="md-nav__link">
+     Detailed works completed in December 2018
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completed-in-january-2019" class="md-nav__link">
+     Detailed works completed in January 2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completedongoing-in-february-2019" class="md-nav__link">
+     Detailed works completed/ongoing in February 2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-ingestion-pipeline" class="md-nav__link">
+     Data Ingestion pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-papers" class="md-nav__link">
+     Reading papers
+  </a>
+  
+    <nav class="md-nav" aria-label=" Reading papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#six-challenges-for-neural-machine-translation" class="md-nav__link">
+    Six Challenges for Neural Machine Translation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-pairs-addition" class="md-nav__link">
+     New pairs addition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmt-deployment" class="md-nav__link">
+     NMT deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impediments" class="md-nav__link">
+    Impediments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referred-articleswebsites" class="md-nav__link">
+    Referred articles/websites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-open-source-libraries" class="md-nav__link">
+    Useful Open source libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collected-from" class="md-nav__link">
+    Data collected from:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prospective-data-corpus" class="md-nav__link">
+    Prospective data corpus
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MT_Flow_Pipeline/" title="Ingestion pipeline flow" class="md-nav__link">
+      Ingestion pipeline flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+    
+    <label class="md-nav__link" for="nav-2-1-3">
+      Problems
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Problems" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-3">
+        <span class="md-nav__icon md-icon"></span>
+        Problems
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sentence_alignment/" title="Sentence Alignment" class="md-nav__link">
+      Sentence Alignment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ui_for_corpus_generation.md" title="UI for corpus generation" class="md-nav__link">
+      UI for corpus generation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../possible_projects/" title="Wishlist" class="md-nav__link">
+      Wishlist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/" title="Other Contributions" class="md-nav__link">
+      Other Contributions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributors/" title="Contributors" class="md-nav__link">
+      Contributors
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-so-far" class="md-nav__link">
+    Analysis so far:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-roadmap" class="md-nav__link">
+    High level Roadmap
+  </a>
+  
+    <nav class="md-nav" aria-label="High level Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completed-in-december-2018" class="md-nav__link">
+     Detailed works completed in December 2018
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completed-in-january-2019" class="md-nav__link">
+     Detailed works completed in January 2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-works-completedongoing-in-february-2019" class="md-nav__link">
+     Detailed works completed/ongoing in February 2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-ingestion-pipeline" class="md-nav__link">
+     Data Ingestion pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-papers" class="md-nav__link">
+     Reading papers
+  </a>
+  
+    <nav class="md-nav" aria-label=" Reading papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#six-challenges-for-neural-machine-translation" class="md-nav__link">
+    Six Challenges for Neural Machine Translation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-pairs-addition" class="md-nav__link">
+     New pairs addition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmt-deployment" class="md-nav__link">
+     NMT deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impediments" class="md-nav__link">
+    Impediments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referred-articleswebsites" class="md-nav__link">
+    Referred articles/websites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-open-source-libraries" class="md-nav__link">
+    Useful Open source libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collected-from" class="md-nav__link">
+    Data collected from:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prospective-data-corpus" class="md-nav__link">
+    Prospective data corpus
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                  <h1>Progress</h1>
+                
+                <p><a href="https://soumendrak.github.io/MTEnglish2Odia/">Home page</a> | <a href="https://soumendrak.github.io/MTEnglish2Odia/MT_Flow_Pipleine">MT_Flow_Pipleine</a> |
+<a href="https://soumendrak.github.io/MTEnglish2Odia/possible_projects">Wishlist</a></p>
+<p>Machine translation from <a href="https://en.wikipedia.org/wiki/English_language">English</a> to <a href="https://en.wikipedia.org/wiki/Odia_language">Odia</a> language</p>
+<h2 id="analysis-so-far">Analysis so far:<a class="headerlink" href="#analysis-so-far" title="Permanent link">#</a></h2>
+<p><a href="https://en.wikipedia.org/wiki/Machine_translation">Machine Translation</a> (MT) has started as early as on 1950s. Based on the progress on this field, the MT can be broadly categorized into following types:
+- Rule based MT (RBMT)
+- Statistical MT (SMT) and 
+- Neural MT (NMT)
+- Hybrid MT (HMT)</p>
+<p>The NMT is giving best score (BLEU score) followed by SMT and RBMT. As explained in <a href="https://arxiv.org/ftp/arxiv/papers/1708/1708.04559.pdf">this paper</a> for Indic languages SMT is performing better (at least 10% higher) than RBMT.
+Based on the reading and analysis from some existing papers, as the corpus is low, for the time-being we will go ahead with SMT (<a href="https://en.wikipedia.org/wiki/Statistical_machine_translation">Statistical Machine Translation</a>) first. As the corpus grows, we will start testing our luck in NMT (<a href="https://en.wikipedia.org/wiki/Neural_machine_translation">Neural Machine Translation</a>)</p>
+<h2 id="high-level-roadmap">High level Roadmap<a class="headerlink" href="#high-level-roadmap" title="Permanent link">#</a></h2>
+<p>This road map is prepared based on my extra time and availability to work. If I will get more help we can deliver early.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Month</th>
+<th align="center">Year</th>
+<th align="left">Milestone</th>
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#december2018">December</a></td>
+<td align="center">2018</td>
+<td align="left">Analyze and study the existing resources available on Internet</td>
+<td align="left">Completed</td>
+</tr>
+<tr>
+<td align="left"><a href="#january2019">January</a></td>
+<td align="center">2019</td>
+<td align="left">Study the reference papers and experts in NMT and analyze their opinions</td>
+<td align="left">Completed</td>
+</tr>
+<tr>
+<td align="left"><a href="#february2019">February</a></td>
+<td align="center">2019</td>
+<td align="left">Do same as January, concentrate more on the state-of-the-art practices</td>
+<td align="left">Completed</td>
+</tr>
+<tr>
+<td align="left">Mar-Dec</td>
+<td align="center">2019</td>
+<td align="left">Parallel corpora generation</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="#september2019">September</a></td>
+<td align="center">2019</td>
+<td align="left">Data ingestion pipeline</td>
+<td align="left">Initial draft prepared</td>
+</tr>
+<tr>
+<td align="left"><a href="#october2019">October</a></td>
+<td align="center">2019</td>
+<td align="left">Read existing papers on MT and write the summary</td>
+<td align="left">Delegated</td>
+</tr>
+<tr>
+<td align="left"><a href="#novdec2019">Nov-Dec</a></td>
+<td align="center">2019</td>
+<td align="left">Parallel corpora generation and data cleaning</td>
+<td align="left">In-progress</td>
+</tr>
+</tbody>
+</table>
+<p><em>The parallel corpora generation data has been moved to <a href="https://github.com/OdiaWikimedia/English-Odia">Odia Wikimedia</a>. There will be </em><em>no further work</em><em> unless we have achieved at least 10k (12k/10k achieved) parallel corpus.</em></p>
+<h3 id="detailed-works-completed-in-december-2018"><a name="december2018"></a> Detailed works completed in December 2018<a class="headerlink" href="#detailed-works-completed-in-december-2018" title="Permanent link">#</a></h3>
+<ul>
+<li>Found corpus worth around <a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879">27,000 English-Odia tab separated translation pairs</a>
+ This needs work on the followings:</li>
+<li>Some preprocessing need to be done.</li>
+<li>All translation not so accurate based on few manual review</li>
+<li>Spelling mistakes are there</li>
+<li>After reading <a href="http://www.scielo.org.mx/scielo.php?pid=S1405-55462017000400725&amp;script=sci_arttext">one article</a> on preprocessing English-Hindi corpus for SMT, I got insight on the following preprocessing tasks need to be done at first:</li>
+<li>Punctuation should NOT be removed</li>
+<li><strong>English</strong> text should be lower cased as Odia does not have any upper case or lower case</li>
+<li>Spell normalization (Which is like <a href="https://en.wikipedia.org/wiki/Lemmatization">Lemmatization</a>) will have a greater impact</li>
+<li>The impact of mapping numbers with unique class labels is not very effective and can be left out.</li>
+<li>We need <a href="https://en.wikipedia.org/wiki/Named-entity_recognition">NER</a> (Named Entity Recognition) words for which <a href="https://en.wikipedia.org/wiki/Transliteration">Transliteration</a> is enough</li>
+<li>We need POS tag data to improve the accuracy also.</li>
+<li><a href="http://www.statmt.org/moses/?n=Moses.Overview">Moses</a> MT tool is open source and ideal for developing SMT for our purpose. </li>
+<li>It needs parallel corpus to train and build the model after that prediction it can do.</li>
+<li>Data curation as explained on above point will be crucial to train this kind of system.</li>
+<li>If no better option available, we will mostly go with this approach.</li>
+<li>Other than this I got a good sense to keep an eye on <a href="https://en.wikipedia.org/wiki/Hybrid_machine_translation">Hybrid Machine Translation</a>, which will be mixture of RBMT and SMT.</li>
+<li>There is not enough corpus available to go for NMT/SMT currently. We need to prepare a platform like <a href="https://translate.google.com/community?source=mfooter#en/or">Google translate community</a> where we can manually create English-Odia phrase or word pairs. For this the following needed:</li>
+<li>UI hosted somewhere on cloud which can handle at least 100 requests per minute</li>
+<li>A DB, also hosted in cloud to store the data provided by users</li>
+<li>Possible suggestions for new users to start translating</li>
+<li>Review mechanism on the translated terms, even with good intention grammatical or syntactical errors need to be validated</li>
+<li>This infrastructure need to be hosted somewhere on cloud and it should be absolutely free to use.</li>
+<li><strong>Unknown words handling</strong> : There will be definitely terms will come for which Odia words will not be present. These are some suggestions to handle unknown words:</li>
+<li>Transliterate those words to Odia</li>
+<li>Using some other existing translation system, convert those words to Hindi/Sanskrit then transliterate those words to Odia. Because most of the words in between Hindi/Sanskrit and Odia are same and people can understand.</li>
+</ul>
+<h3 id="detailed-works-completed-in-january-2019"><a name="january2019"></a> Detailed works completed in January 2019<a class="headerlink" href="#detailed-works-completed-in-january-2019" title="Permanent link">#</a></h3>
+<ul>
+<li>Last year has been pretty exciting to prepare this plan. Hope this year we will be able to deliver something useful for the community.</li>
+<li>Quality of data is highly needed. Therefore started preparing phrase parallel corpus and contributing simultaneously to both Google and Facebook. How ? Google translation community and Facebook Translate are recommending phrases to translate. The same phrases I am keeping a copy to myself.</li>
+<li>Microsoft has given <a href="https://hub.microsofttranslator.com">an exciting resource</a> to public to train their own Parallel Translation model that is also <strong>FREE</strong>. Details: </li>
+<li>It needs more than 10,000 pairs of parallel sentence pairs</li>
+<li>It seems to be working on SMT</li>
+<li>Train, Testing, Deployment all pipeline have been there</li>
+<li>First attempt I have tried this tool with GNOME translation pair I got. However, It got failed may be due to only 60 parallel sentences.</li>
+<li>In the meantime there seems to be many work going on with frequent papers in <a href="http://arxiv.org/abs/1901.04112v1">Unsupervised NMT</a> for low resources languages, there has not been any significant usable work yet. However, I am keeping an eye on that too.</li>
+<li>The Translator Hub has been retired on May 2019. It has been migrated to <a href="https://www.microsoft.com/en-us/translator/business/hub/">Microsoft Custom translator</a>. However, Odia language is unavailable currently. I have requested them to add it.</li>
+</ul>
+<h3 id="detailed-works-completedongoing-in-february-2019"><a name="february2019"></a> Detailed works completed/ongoing in February 2019<a class="headerlink" href="#detailed-works-completedongoing-in-february-2019" title="Permanent link">#</a></h3>
+<ul>
+<li>Data review and preparation started. </li>
+<li>Around 550 pairs reviewed till now. We need at least 10,000 pairs by end of this month. Finding ways to automate.</li>
+</ul>
+<h3 id="data-ingestion-pipeline"><a name="september2019"></a> Data Ingestion pipeline<a class="headerlink" href="#data-ingestion-pipeline" title="Permanent link">#</a></h3>
+<ul>
+<li>A <a href="https://soumendrak.github.io/MTEnglish2Odia/MT_Flow_Pipleine">pipeline flow</a> draft for data ingestion been created.  </li>
+</ul>
+<h3 id="reading-papers"><a name="october2019"></a> Reading papers<a class="headerlink" href="#reading-papers" title="Permanent link">#</a></h3>
+<h4 id="six-challenges-for-neural-machine-translation">Six Challenges for Neural Machine Translation<a class="headerlink" href="#six-challenges-for-neural-machine-translation" title="Permanent link">#</a></h4>
+<ul>
+<li>There are <a href="https://arxiv.org/pdf/1706.03872.pdf">six challenges in NMT</a></li>
+<li>Domain mismatch</li>
+<li>Amount of Training Data</li>
+<li>Rare Words</li>
+<li>Long sentences</li>
+<li>Word Alignment</li>
+<li>Beam Search</li>
+</ul>
+<h3 id="new-pairs-addition"><a name="novdec2019"></a> New pairs addition<a class="headerlink" href="#new-pairs-addition" title="Permanent link">#</a></h3>
+<p>Bible pairs from OdiEnCorp1.0 has been added to the consolidated corpus.</p>
+<h3 id="nmt-deployment"><a name="may2020"></a> NMT deployment<a class="headerlink" href="#nmt-deployment" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/pricing/details/machine-learning/">Microsoft Azure ML pricing</a> (for basic version)</li>
+<li>It does not have GPU support </li>
+<li>Create and publish custom modules in Azure ML designer is not there</li>
+</ul>
+<h2 id="impediments">Impediments<a class="headerlink" href="#impediments" title="Permanent link">#</a></h2>
+<ul>
+<li>[x] Get at least 10,000 parallel open corpus for Odia language to begin with.</li>
+<li>[ ] Verification of the existing corpus badly needed.</li>
+<li>[ ] Moses does not run on Windows. Need an Ubuntu OS to test that.</li>
+<li>[ ] Need a cloud system to host manual translation API server and in future for online translation. Is it Microsoft ?</li>
+</ul>
+<h2 id="referred-articleswebsites">Referred articles/websites:<a class="headerlink" href="#referred-articleswebsites" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="http://wiki.apertium.org/wiki/Odia">Apertium Wiki for Odia language</a></li>
+<li><a href="http://lotus.kuee.kyoto-u.ac.jp/WAT/indic-multilingual/index.html">Indic Languages Multilingual Parallel Corpus</a></li>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1812/1812.00798.pdf">The RGNLP Machine Translation Systems for WAT 2018</a></li>
+<li><a href="https://www.cdac.in/index.aspx?id=mc_mat_anuvadakshInfo">Anuvadaksh- An online existing English-Odia translator</a></li>
+<li><a href="http://www.cfilt.iitb.ac.in/indowordnet/">Wordnet for Odia</a></li>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1708/1708.04559.pdf">RBMT vs SMT</a></li>
+<li><a href="http://airccse.org/journal/ijnlc/papers/4215ijnlc05.pdf">Detail MT system analysis of Indic languages</a></li>
+<li><a href="http://ijesm.co.in/uploads/68/4983_pdf.pdf">English-Punjabi parallel corpus creation</a></li>
+<li><a href="https://arxiv.org/pdf/1905.08945v1">Creating more corpus by breaking long sentences</a></li>
+</ul>
+<h2 id="useful-open-source-libraries">Useful Open source libraries<a class="headerlink" href="#useful-open-source-libraries" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://github.com/clab/fast_align">fast_align</a> : Align the words between two parallel corpus </li>
+</ul>
+<h2 id="data-collected-from">Data collected from:<a class="headerlink" href="#data-collected-from" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://www.mediawiki.org/wiki/Content_translation/Published_translations">Wikipedia Data dump</a></li>
+<li><a href="http://opus.nlpl.eu">Open Parallel Corpus</a></li>
+<li><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879">OdiEnCorp 1.0</a></li>
+<li><a href="http://tdil-dc.in/index.php?option=com_download&amp;task=showresourceDetails&amp;toolid=1070&amp;lang=en">TDIL</a> - Technical strings 52,000 pairs-Data needs to be cleaned</li>
+<li><a href="http://casmacat.eu/corpus/global-voices.html">Global Voices</a> - 328 sentences pairs</li>
+<li><a href="https://www.narendramodi.in/mann-ki-baat">Mann ki baat</a> - 1000+ pairs</li>
+<li><a href="https://twitter.com/drgynaec">Twitter:DoctorBabu</a> - Around 100 Botanical terms En-Or pairs</li>
+<li><a href="https://github.com/rupeshranjanpanda/odia">Rupesh Ranjan Panda</a> - Around 300 generic En-Or pairs</li>
+</ul>
+<h2 id="prospective-data-corpus">Prospective data corpus<a class="headerlink" href="#prospective-data-corpus" title="Permanent link">#</a></h2>
+<p>These are few places where relevant data may be present, however getting the data is not straight forward.
+* <a href="http://catalog.elra.info/en-us/repository/browse/ELRA-W0037/">EMILLE Project</a> :
+  The Oriya written corpus consists of data incorporated from the CIIL Corpus, originally gathered by the Institute of Applied Language Sciences, Bhubaneshwar (approximately 2,730,000 words).
+* <a href="https://tdil-dc.in/index.php?option=com_download&amp;task=showresourceDetails&amp;toolid=281&amp;lang=en">Gyan Nidhi-TDIL</a> : Million pages’ multilingual parallel text corpus in English and 11  Indian  languages  (Assamese,  Bengali,  Gujarati,  Hindi, Kannada,   Marathi,   Malayalam,   Oriya,   Punjabi,   Tamil   &amp; Telugu)  based  on  Unicode  encoding.  The  Gyan  Nidhi  corpus contains  the  text  in  the  form  of  books. In  these  books  there were  number of diagrams,  figures,  charts  and  other  special symbols. These are removed from the text by using automated and  manual  tools.  The  text  in  gyan  nidhi  is  in  the  form of paragraphs, that are converted into short sentences.
+* <a href="https://data.ldcil.org/text/text-raw-corpus/a-gold-standard-odia-raw-text-corpus">A Gold Standard Odia Raw Text Corpus</a> : Around 15, 88, 287 words are there in this corpus available to purchase. </p>
+<p><em>"In my dream of the 21st century for the State, I would have young men and women who put the interest of the State before them. They will have pride in themselves, confidence in themselves. They will not be at anybody’s mercy, except their own selves. By their brains, intelligence and capacity, they will recapture the history of Kalinga." - <a href="https://en.wikipedia.org/wiki/Biju_Patnaik">Biju Pattnaik</a></em></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This Website's documentation work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2020-09-02T08:54:15+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2020-09-02</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../purpose/" title="Purpose" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Purpose
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../MT_Flow_Pipeline/" title="Ingestion pipeline flow" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Ingestion pipeline flow
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.locales.min.js"></script>
+          <script>
+            var nodes = document.querySelectorAll('.timeago');
+            var locale = nodes[0].getAttribute('locale');
+            timeago.render(nodes, locale);
+          </script>
+        </body>
+</html>
