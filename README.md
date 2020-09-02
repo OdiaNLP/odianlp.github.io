@@ -2,5 +2,3 @@
 <p align="center">
 <a href="https://travis-ci.com/OdiaNLP/odianlp.github.io"><img alt="Master Build status" src="https://travis-ci.com/OdiaNLP/odianlp.github.io.svg?branch=master"></a>
 
-# odianlp.github.io
-Documention for progress of Odia language on NLP
