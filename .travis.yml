@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+install:
+    - pip install mkdocs
+
 script: true
 
 before_deploy:
