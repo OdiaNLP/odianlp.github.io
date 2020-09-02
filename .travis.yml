@@ -1,0 +1,24 @@
+language: python
+
+python: 3.8
+
+branches:
+  only:
+    - master
+
+install:
+    - pip install -r requirements.txt
+
+script: true
+
+before_deploy:
+    - mkdocs build --clean
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${{ secrets.GITHUB_TOKEN }}
+  github_url: github.io
+  local_dir: site
+  on:
+    branch: master
