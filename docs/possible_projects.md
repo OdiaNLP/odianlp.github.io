@@ -36,9 +36,9 @@ This list contains the proposals for the projects which can be started with Odia
 - The source code to crawl and extract Wikipedia data can be found [here](https://github.com/goru001/nlp-for-odia/tree/master/datasets-preparation)
 - You can directly get the dump from the Wikimedia site itself, you can get data dump of both Wikisource (Odia books) and Wikipedia (Odia articles) from [this site](https://dumps.wikimedia.org/backup-index.html). Need to cleanup a bit as well.
 #### How-to do?
-This is a data collection project. 
-1. Extract the content from various websites with CC license by writing [web crawlers](https://en.wikipedia.org/wiki/Web_crawler) or taking wikipedia dump
-2. Clear the corpus.
+This is a data collection project.  
+1. Extract the content from various websites with CC license by writing [web crawlers](https://en.wikipedia.org/wiki/Web_crawler) or taking wikipedia dump  
+2. Clear the corpus.  
 3. Prepare an Odia language sentences corpus.
 
 ### <a name="lang-detector"></a> Language detector
@@ -48,7 +48,7 @@ It should identify if Odia language text are given.
 1. [Google language detector](https://github.com/CLD2Owners/cld2)
 2. 
 ### <a name="pos-tag"></a> Part of speech tagging
+Given a sentence find out the part of speeches present on that sentence.  
+Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ### <a name="stemming"></a> Stemming
 ### <a name="lemmatization"></a> Lemmatization
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This Website's documentation work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
