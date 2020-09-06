@@ -21,8 +21,6 @@ $ pip install googletrans
 >>> translator.translate("Hello Odia people", dest="or").text
 # 'ନମସ୍କାର ଓଡିଆ ଲୋକମାନେ |'
 ```
-### NMT and SMT
-More info on this will be added soon..
 
 ## Data Anonymization
 ### [Fake Odia name generation](https://github.com/joke2k/faker)
