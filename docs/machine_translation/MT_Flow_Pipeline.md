@@ -1,7 +1,9 @@
-# Machine Translation Flow Pipeline
+# Machine Translation ingestion flow pipeline
 ### Update log
-- Date | Version | Author | Change details  
-- 22nd Sept'19 | 0.01 | Soumendra Kumar Sahoo | Initial draft created
+Date | Year | Version | Author | Change details
+:---------|:----------:|:---------|:---------|:---------
+22nd Sept | 2019 | 0.01 | Soumendra Kumar Sahoo | Initial draft created
+7th Sept | 2020 | 0.02 | Soumendra Kumar Sahoo | Update log converted to a tabular format
 
 ## Objective
 This document explains to various pipeline flows for training and querying of English to Odia the translation.

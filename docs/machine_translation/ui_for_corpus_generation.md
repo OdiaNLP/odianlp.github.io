@@ -6,14 +6,17 @@ Along with corpus collection, it should have the following features:
 - Gift coupons and other annual prize distribution
 - Smooth synchronization with OAuth2 social media tokens
 
-The UI will have two tabs:   
-1. Add
-   1. Word
-   2. Phrase
-   3. Sentence
-2. Review
-   1. Word
-   2. Phrase
-   3. Sentence
-   4. Paragraph 
+The UI will have two tabs:    
 
+1. Add
+    1. Word
+    2. Phrase
+    3. Sentence
+2. Review
+    1. Word
+    2. Phrase
+    3. Sentence
+    4. Paragraph 
+
+## Solution
+- https://mte2o-review.herokuapp.com building is in progress.
