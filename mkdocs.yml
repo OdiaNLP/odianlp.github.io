@@ -67,7 +67,9 @@ nav:
   - Major ongoing projects:
     - Machine Translation:
         - Progress: machine_translation/progress.md
-        - Ingestion pipeline flow: machine_translation/MT_Flow_Pipeline.md
+        - Architecture:
+          - Ingestion pipeline flow: machine_translation/MT_Flow_Pipeline.md
+        - Datasets: machine_translation/datasets.md
         - Challenges:
             - Sentence Alignment: machine_translation/sentence_alignment.md
             - UI for corpus generation: machine_translation/ui_for_corpus_generation.md
