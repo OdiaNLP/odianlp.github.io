@@ -1,0 +1,3 @@
+# Coming Soon... 
+This page will contain all the open source resources found over internet on Odia text.
+
