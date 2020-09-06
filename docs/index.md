@@ -1,2 +1,4 @@
 
-There has been few to less content on Natural Language Processing for low resource languages like Odia. This is an effort by few volunteers to increase the NLP content over Internet.
+There has been less open source content on internet for low resource languages like Odia. If there also, in a scattered way. 
+This is an effort by [few volunteers](contributors.md) to increase the footprint over the Internet.  
+_This project has been moved from [MTEnglish2Odia](https://github.com/soumendrak/MTEnglish2Odia)._
