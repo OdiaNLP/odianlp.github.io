@@ -63,7 +63,7 @@ nav:
   - Purpose: purpose.md
   - Need help: possible_projects.md
   - Contributors: contributors.md
-  - Major ongoing projects:
+  - Projects:
     - Machine Translation:
         - Progress: machine_translation/progress.md
         - Architecture:
@@ -73,12 +73,10 @@ nav:
             - Sentence Alignment: machine_translation/sentence_alignment.md
             - UI for corpus generation: machine_translation/ui_for_corpus_generation.md
             - Tweets extraction: machine_translation/tweets_extraction.md
-  - Other projects:
-    - Contribution: contributions.md
+    - Other projects: contributions.md
   - Resources:
     - Text: resources/text.md
     - Audio: resources/audio.md
     - Visual: resources/visual.md
-  - Changelog:
-    - Release notes: releases/changelog.md
-    - Deprecations: releases/deprecations.md
+  - Newsfeed:
+    - Latest news: newsfeed/newsfeed.md
