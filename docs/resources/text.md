@@ -4,7 +4,7 @@ This page contains probable open source resources found over internet on Odia te
 
 Dataset | License | Need to be cleaned? | Estimated number of pairs | Note
 :---------|:-------:|:---------|:---------|:---------------------------------------
- [Wikipedia Data dump](https://www.mediawiki.org/wiki/Content_translation/Published_translations) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Yes | 2,00,000+ | Pairs can be taken from the [dumps](https://dumps.wikimedia.org)
+ [Wikipedia Data dump](https://www.mediawiki.org/wiki/Content_translation/Published_translations) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Yes | 2,00,000+ | Pairs can be taken from the [dumps](https://dumps.wikimedia.org). ([Reference](https://medium.com/@soumendrak/extracting-parallel-text-pairs-from-wikipedia-e473ad167b41)).
  [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) |[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) | Yes | 1,00,000+ | Mostly Bible data
  [OdiaNLP corpus]((https://github.com/OdiaNLP/NMT/tree/master/data/output/organised)) | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | No | 80,437 | Generic En-Or pairs collected from [many sources](../machine_translation/datasets.md#sources) with multiple liceses.
  [OdiEnCorp 2.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3211) | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) | - | 94,000+ | Quality not checked.

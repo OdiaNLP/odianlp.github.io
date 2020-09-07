@@ -13,6 +13,9 @@
 * [Rupesh Ranjan Panda](https://github.com/rupeshranjanpanda/odia) - Around 300 generic En-Or pairs
 * [Krishna Kabi](https://twitter.com/krishna_kabi) - 186 En-Or pairs
 
+### Additional links:
+- [Extracting Parallel-text pairs from Wikipedia](https://medium.com/@soumendrak/extracting-parallel-text-pairs-from-wikipedia-e473ad167b41)
+
 ## Odia Monolingual corpus
 - Monolingual Odia data has been extracted from Wikipedia.
 - You can use this repo to fetch the latest dataset.
