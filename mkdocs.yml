@@ -64,6 +64,7 @@ nav:
   - Need help: possible_projects.md
   - Contributors: contributors.md
   - Projects:
+    - Projects: projects.md
     - Machine Translation:
         - Progress: machine_translation/progress.md
         - Architecture:
