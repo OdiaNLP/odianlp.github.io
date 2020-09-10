@@ -42,6 +42,9 @@ $ pip install Faker
 ରନ୍ଧାରୀ, ସୁଶାନ୍ତ
 ଗୈାତମ ଓରାମ
 ```
+## Named Entity Recognition
+### [Odia Persons' name dataset](https://www.kaggle.com/soumendrak/odia-person-names)
+- Odia persons' name dataset has been added to Kaggle, to make it publicly available and further development on NER in Odia language.
 ## Localization
 - Various localization projects to make websites and applications available in Odia language
 ### [Telegram](https://telegram.org/) - Open source instant messaging tool
