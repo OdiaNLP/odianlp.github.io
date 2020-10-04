@@ -80,5 +80,7 @@ nav:
     - Text: resources/text.md
     - Audio: resources/audio.md
     - Visual: resources/visual.md
+  - Blogs:
+    - Odias in ML: blogs/odias_in_ML.md
   - Newsfeed:
     - Recent posts: newsfeed/newsfeed.md

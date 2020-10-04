@@ -14,5 +14,8 @@ Dataset | License | Need to be cleaned? | Estimated number of pairs | Note
  [IndoWordnet](https://github.com/anoopkunchukuttan/indowordnet_parallel) |[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | - | 30,000+ | Corpus quality need to be checked.
  
 ## Monolingual Corpus
-Will be added soon...
+Coming soon... 
 
+## Additional Resources
+- [Odia-NLP-Resource-Catalog](https://github.com/shantipriyap/Odia-NLP-Resource-Catalog) by Dr. Shantipriya Parida 
+- [A Catalog of resources for Indian language NLP](https://github.com/AI4Bharat/indicnlp_catalog) by AI4Bharat team
