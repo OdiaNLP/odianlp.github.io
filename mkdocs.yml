@@ -26,12 +26,23 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
-    - tabs
-    - instant
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
   palette:
-    scheme: default
+  - scheme: default
     primary: indigo
-    accent: indigo
+    accent: blue
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - scheme: slate
+    primary: green
+    accent: blue
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -45,6 +56,7 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: "#"
+  - pymdownx.tabbed
 
 # Customization
 extra:
@@ -57,6 +69,10 @@ extra:
       link: https://twitter.com/soumendra_ks
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/soumendrakumarsahoo/
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
 
 nav:
   - Home: index.md
