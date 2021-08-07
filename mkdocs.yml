@@ -26,9 +26,11 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
-    - navigation.instant
-    - navigation.sections
+    - instant
+    # - navigation.sections
+    - navigation.top
     - navigation.tabs
+    - tabs
     - toc.integrate
   palette:
   - scheme: default
@@ -49,7 +51,8 @@ theme:
   favicon: assets/favicon.png
 
 plugins:
-  - search
+  - search:
+      prebuild_index: true
   - git-revision-date-localized:
       type: timeago
 
