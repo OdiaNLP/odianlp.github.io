@@ -1,8 +1,12 @@
-All the contribution are Open source and freely available (with proper attribution) to the society.   
+# COntributions
+
+All the contribution are Open source and freely available (with proper attribution) to the society.
 OdiaNLP has done either _entire or partial_ contributions to the following projects:
 
-## Text to Speech or Speech to Text 
+## Text to Speech or Speech to Text
+
 ### [Mozilla Common Voice](https://commonvoice.mozilla.org/or)
+
 - Speech corpora creation through Mozilla Common Voice.
 - 150MB Speech data has been prepared with purely volunteering efforts.
 
@@ -13,7 +17,9 @@ OdiaNLP has done either _entire or partial_ contributions to the following proje
 ## Machine Translation
 
 ### [Google Translation API wrapper](https://github.com/ssut/py-googletrans)
+
 - Odia has been added into Unofficial Google Translation API wrapper.
+
 ```python
 $ pip install googletrans
 >>> from googletrans import Translator
@@ -23,8 +29,11 @@ $ pip install googletrans
 ```
 
 ## Data Anonymization
+
 ### [Fake Odia name generation](https://github.com/joke2k/faker)
+
 - For fake name generation purposes Odia support has been added to the best data anonymization library, Faker.
+
 ```python
 $ pip install Faker
 >>> from faker import Faker
@@ -42,12 +51,19 @@ $ pip install Faker
 ରନ୍ଧାରୀ, ସୁଶାନ୍ତ
 ଗୈାତମ ଓରାମ
 ```
+
 ## Named Entity Recognition
+
 ### [Odia Persons' name dataset](https://www.kaggle.com/soumendrak/odia-person-names)
+
 - Odia persons' name dataset has been added to Kaggle, to make it publicly available and further development on NER in Odia language.
+
 ## Localization
+
 - Various localization projects to make websites and applications available in Odia language
+
 ### [Telegram](https://telegram.org/) - Open source instant messaging tool
+
 <p align="center">
   <img width="560" height="400" src="/images/telegram.jpg">
 </p>
@@ -57,11 +73,13 @@ $ pip install Faker
 </p>
 
 ### [Duckduckgo](https://duckduckgo.com/) - Privacy based search engine
+
 <p align="center">
   <img width="560" height="400" src="/images/ddg.png">
 </p>
 
 ### [COVID-19 website](https://www.covid19india.org/) (Unofficial)
+
 <p align="center">
   <img width="560" height="400" src="/images/covid19_screenshot.png">
 </p>
