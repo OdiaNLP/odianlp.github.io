@@ -78,10 +78,11 @@ extra_javascript:
   - javascripts/tables.js
 
 nav:
-  - Home: index.md
-  - Purpose: purpose.md
+  - Home: 
+    - About: index.md
+    - Contributors: contributors.md
+    - Purpose: purpose.md
   - Need help: possible_projects.md
-  - Contributors: contributors.md
   - Projects:
     - Projects: projects.md
     - Machine Translation:
