@@ -1,4 +1,4 @@
-# COntributions
+# Contributions
 
 All the contribution are Open source and freely available (with proper attribution) to the society.
 OdiaNLP has done either _entire or partial_ contributions to the following projects:
@@ -8,11 +8,37 @@ OdiaNLP has done either _entire or partial_ contributions to the following proje
 ### [Mozilla Common Voice](https://commonvoice.mozilla.org/or)
 
 - Speech corpora creation through Mozilla Common Voice.
-- 150MB Speech data has been prepared with purely volunteering efforts.
+- 201MB Speech data has been prepared with purely volunteering efforts as of 21 July 2021.
 
 <p align="center">
   <img width="560" height="400" src="/images/Common_Voice_screenshot.png">
 </p>
+
+- After downloading you will get a folder structure like this:
+
+``` bash
+cv-corpus-<version>-<date>
+└── or
+    ├── reported.tsv
+    ├── dev.tsv
+    ├── other.tsv
+    ├── test.tsv
+    ├── train.tsv
+    ├── validated.tsv
+    ├── partials/template
+    └── clips
+        ├── common_voice_or_<count>.mp3
+        ├── common_voice_or_<count>.mp3
+        ├── common_voice_or_<count>.mp3
+        ├── common_voice_or_<count>.mp3
+        .
+        .
+        .
+        └── common_voice_or_<count>.mp3
+```
+
+- The `.tsv` files contain the odia sentences in odia script.
+- The `.mp3` files contain the corresponding pronunciation audio of the script.
 
 ## Machine Translation
 

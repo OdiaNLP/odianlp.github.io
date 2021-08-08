@@ -61,6 +61,7 @@ markdown_extensions:
   - toc:
       permalink: "#"
   - pymdownx.tabbed
+  - attr_list
 
 # Customization
 extra:
@@ -105,4 +106,4 @@ nav:
   - Blogs:
     - Odias in ML: blogs/odias_in_ML.md
   - Newsfeed:
-    - Recent posts: newsfeed/newsfeed.md
+    - Updates: newsfeed/newsfeed.md
