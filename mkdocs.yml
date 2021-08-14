@@ -66,6 +66,10 @@ markdown_extensions:
 # Customization
 extra:
   homepage: https://www.mte2o.com
+  analytics:
+    provider: google
+    property: G-6V5C6Z523T
+
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/OdiaNLP
