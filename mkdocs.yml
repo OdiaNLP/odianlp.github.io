@@ -123,7 +123,6 @@ nav:
   - Home: 
     - About: index.md
     - Contributors: contributors.md
-    - Purpose: purpose.md
   - Need help: possible_projects.md
   - Projects:
     - Projects: projects.md

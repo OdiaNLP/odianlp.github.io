@@ -111,7 +111,8 @@ Bible pairs from OdiEnCorp1.0 has been added to the consolidated corpus.
 
 ## Referred articles/websites
 
-* [Apertium Wiki for Odia language](http://wiki.apertium.org/wiki/Odia)
+- [Apertium Wiki for Odia language](http://wiki.apertium.org/wiki/Odia)
+
 - [Indic Languages Multilingual Parallel Corpus](http://lotus.kuee.kyoto-u.ac.jp/WAT/indic-multilingual/index.html)
 - [The RGNLP Machine Translation Systems for WAT 2018](https://arxiv.org/ftp/arxiv/papers/1812/1812.00798.pdf)
 - [Anuvadaksh- An online existing English-Odia translator](https://www.cdac.in/index.aspx?id=mc_mat_anuvadakshInfo)

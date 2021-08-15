@@ -96,7 +96,7 @@ I have chosen to go ahead with the 3rd approach.
     3. To make the API stable and scalable.
 
 - I have started working in Heroku to deploy this dictionary.
-- It's deployed in https://odia-dictionary.herokuapp.com/ but, it is not stable, due to 500 MB RAM free-tier limitation in Heroku.
+- It's deployed in <https://odia-dictionary.herokuapp.com/> but, it is not stable, due to 500 MB RAM free-tier limitation in Heroku.
 
 ???+note "Future Work"
     - [ ] Host the dictionary in a stable server.
