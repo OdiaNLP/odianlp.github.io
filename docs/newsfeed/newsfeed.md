@@ -1,8 +1,12 @@
-# Update
+# Updates
 
 ## 2021
 
 ### August
+
+- **15th Aug:**
+    - English-Odia enabled in the dictionary project.
+    - More data added to the [Dictionary](../../dictionary) project documentation.
 
 - **8th Aug:**  
     This website have been upgraded.

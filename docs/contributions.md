@@ -44,7 +44,7 @@ cv-corpus-<version>-<date>
 
 ### [Google Translation API wrapper](https://github.com/ssut/py-googletrans)
 
-- Odia has been added into Unofficial Google Translation API wrapper.
+- Odia [has been added](https://github.com/ssut/py-googletrans/pull/159) into Unofficial Google Translation API wrapper.
 
 ```python
 $ pip install googletrans

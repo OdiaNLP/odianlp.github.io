@@ -58,10 +58,45 @@ plugins:
       type: timeago
 
 markdown_extensions:
-  - toc:
-      permalink: "#"
-  - pymdownx.tabbed
+  - admonition
+  - abbr
   - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.progressbar
 
 # Customization
 extra:
@@ -109,5 +144,5 @@ nav:
     - Visual: resources/visual.md
   - Blogs:
     - Odias in ML: blogs/odias_in_ML.md
-  - Newsfeed:
+  - Updates:
     - Updates: newsfeed/newsfeed.md
