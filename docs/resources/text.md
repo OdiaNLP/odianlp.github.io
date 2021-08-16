@@ -12,10 +12,25 @@ Dataset | License | Need to be cleaned? | Estimated number of pairs | Note
  [Press Information Bureau](http://preon.iiit.ac.in/~jerin/bhasha/) | [CC-BY-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) | Yes | 58,461 | Sentences are aligned. Contains _Mann Ki Baat_ pairs too.  
  [Mann ki baat](http://data.statmt.org/pmindia/v1/parallel/pmindia.v1.or-en.tsv) |[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | Yes | 38,359 | High quality translation and [much more](https://arxiv.org/pdf/2001.09907.pdf). However, cleaning needs to be done.
  [IndoWordnet](https://github.com/anoopkunchukuttan/indowordnet_parallel) |[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | - | 30,000+ | Corpus quality need to be checked.
- 
+
 ## Monolingual Corpus
-Coming soon... 
+
+Coming soon...
 
 ## Additional Resources
-- [Odia-NLP-Resource-Catalog](https://github.com/shantipriyap/Odia-NLP-Resource-Catalog) by Dr. Shantipriya Parida 
+
+- [Odia-NLP-Resource-Catalog](https://github.com/shantipriyap/Odia-NLP-Resource-Catalog) by Dr. Shantipriya Parida
 - [A Catalog of resources for Indian language NLP](https://github.com/AI4Bharat/indicnlp_catalog) by AI4Bharat team
+
+<!-- Citation -->
+<hr>
+To cite this resource list, please use:
+
+```bibtex
+@misc{OdiaNLP,
+    author       = {Soumendra Kumar Sahoo},
+    title        = {Text resources by Odia NLP},
+    howpublished = {\url{https://www.mte2o.com/}},
+    year         = {2021}
+}
+```

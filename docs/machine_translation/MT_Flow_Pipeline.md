@@ -200,3 +200,16 @@ Checking:
 - Check the minimum number of letters/words/POS tags
 - Likelihood of finding a translation
     - Depends on many parameters
+
+<!-- Citation -->
+<hr>
+To cite this page, please use:
+
+```bibtex
+    @misc{OdiaNLP,
+        author       = {Soumendra Kumar Sahoo},
+        title        = {Ingestion pipeline for MT by Odia NLP},
+        howpublished = {\url{https://www.mte2o.com/}},
+        year         = {2021}
+    }
+```

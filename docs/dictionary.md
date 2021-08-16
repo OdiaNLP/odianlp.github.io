@@ -106,3 +106,16 @@ I have chosen to go ahead with the 3rd approach.
 [^2]: https://stackoverflow.com/q/7646112/5014656
 [^3]: https://nordicapis.com/everything-you-need-to-know-about-api-rate-limiting/
 [^4]: https://en.wikipedia.org/wiki/Lemmatisation
+
+<!-- Citation -->
+<hr>
+To cite this page, please use:
+
+```bibtex
+    @misc{OdiaNLP,
+        author       = {Soumendra Kumar Sahoo},
+        title        = {Dictionary by Odia NLP},
+        howpublished = {\url{https://www.mte2o.com/}},
+        year         = {2021}
+    }
+```
