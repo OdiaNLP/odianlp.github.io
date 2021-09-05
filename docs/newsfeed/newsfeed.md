@@ -2,6 +2,12 @@
 
 ## 2021
 
+### September
+
+- **6th Sep**
+    - More data added to the [Possible projects](../../possible_projects) documentation page.
+    - GitHub Actions enabled to automatically deploy to website in case of push to `master` branch.
+
 ### August
 
 - **15th Aug:**
