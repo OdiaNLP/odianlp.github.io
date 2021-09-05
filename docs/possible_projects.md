@@ -71,3 +71,4 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 
 ## <a name="text-summarization"></a>Odia text summarization
 - [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf) by IIIT Bhubaneswar
+- [Automatic Text Summarization for Oriya Language](https://www.researchgate.net/publication/290977681_Automatic_Text_Summarization_for_Oriya_Language) by North Orissa University
