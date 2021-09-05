@@ -27,6 +27,7 @@ This list contains the proposals for the projects which can be started with Odia
 - [Spell corrector](#spell-corrector)
 - [Sentence completion](#sentence-completion)
 - [Automatic speech recognition (major project)](#speech-recognition)
+- [Text Summarization](#text-summarization)
 
 ## <a name="monolingual-corpus"></a> Monolingual corpus
 
@@ -67,3 +68,6 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ## <a name="stemming"></a> Stemming
 
 ## <a name="lemmatization"></a> Lemmatization
+
+## <a name="text-summarization"></a>Odia text summarization
+- [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf) by IIIT Bhubaneswar
