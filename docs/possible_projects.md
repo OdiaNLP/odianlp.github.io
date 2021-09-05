@@ -28,6 +28,7 @@ This list contains the proposals for the projects which can be started with Odia
 - [Sentence completion](#sentence-completion)
 - [Automatic speech recognition (major project)](#speech-recognition)
 - [Text Summarization](#text-summarization)
+- [Optical Character Recognition](#ocr)
 
 ## <a name="monolingual-corpus"></a> Monolingual corpus
 
@@ -74,3 +75,7 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ## <a name="text-summarization"></a>Odia text summarization
 - [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf) by IIIT Bhubaneswar
 - [Automatic Text Summarization for Oriya Language](https://www.researchgate.net/publication/290977681_Automatic_Text_Summarization_for_Oriya_Language) by North Orissa University
+
+## <a name="ocr"></a> Optical Character Recognition of Odia script
+
+- [Automatic recognition of printed Oriya script](https://www.ias.ac.in/article/fulltext/sadh/027/01/0023-0034) by Indian Statistical Institute, Kolkata
