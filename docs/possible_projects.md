@@ -66,6 +66,8 @@ Given a sentence find out the part of speeches present on that sentence.
 Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 
 ## <a name="stemming"></a> Stemming
+- [A Suffix Stripping Algorithm for Odia Stemmer](https://docplayer.net/55951889-A-suffix-stripping-algorithm-for-odia-stemmer.html) by Utkal university with 88% accuracy.
+- [Design of Lightweight stemmer for Odia Derivational Suffixes](https://ijarcce.com/wp-content/uploads/2012/03/IJARCCE2I-A-Excellent-DESIGN.pdf) by Govt. college of Engineering Keonjhar with 85% accuracy.
 
 ## <a name="lemmatization"></a> Lemmatization
 
