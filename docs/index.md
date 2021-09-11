@@ -11,3 +11,5 @@ This is an effort by [few volunteers](contributors.md) to increase the footprint
 To develop an ecosystem for Odia language in text, audio and vision space, which will nurture and further help developments in these areas to interested individuals.
 
 _This project has been moved from [MTEnglish2Odia](https://github.com/soumendrak/MTEnglish2Odia)._
+
+## How can I contribute to the project?
