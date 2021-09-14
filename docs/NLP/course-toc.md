@@ -1,8 +1,32 @@
 # Table of Content
 
-The course content need to be revisited to help understand people even who do not know programming.  
 These are the topics which will be covered in this course.
 
+## Prerequisites
+
+These are the basic knowledge needed to go ahead with this course.
+
+1. Basic Python programming knoweldge which includes
+    1. Python data types: string, integer, list, set and dictionary
+    2. Basic looping using for loop
+    3. Conditional operators if..else
+
+??? hint "But, I do not know Python programming :cry:" 
+    
+    Do not worry there are plenty of courses available for free online to learn Python.  
+    If you prefer text based tutorial or video based ones, all are available. You just need to search for it.  
+    Yeah, but you know something from me as a reference is not it? ok, these are my recommendations and yes of course all are free.
+     
+    ### Text-based
+
+     1. [30-days-of-python](https://github.com/Asabeneh/30-Days-Of-Python)
+     2. [Automate the boring stuff](https://automatetheboringstuff.com/2e/chapter0/)
+
+    ### Video-based
+     
+     1. [Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8)
+     2. [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw)
+     3. [Python Tutorial For Beginners In Hindi (With Notes) 🔥](https://www.youtube.com/watch?v=gfDE2a7MKjA)
 ## Introduction
 
 0. Application of NLP in industry[^8]

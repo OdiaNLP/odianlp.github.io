@@ -59,8 +59,6 @@ It should identify if Odia language text are given.
 
 1. [Google language detector](https://github.com/CLD2Owners/cld2)
 
-2.
-
 ## <a name="pos-tag"></a> Part of speech tagging
 
 Given a sentence find out the part of speeches present on that sentence.  
