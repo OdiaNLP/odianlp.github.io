@@ -30,6 +30,11 @@ These are the basic knowledge needed to go ahead with this course.
 ## Introduction
 
 0. Application of NLP in industry[^8]
+    <!-- This part is about changing the mindset of students along with increasing curiosity in them -->
+    - There are many ways we can showcase how NLP is helping the world. We can start with a few examples:
+        - Characters and the unicodes behind them
+        - Summarization
+        - Sentiment analysis
 1. Curriculum
 
 ## Python and NLP basics
