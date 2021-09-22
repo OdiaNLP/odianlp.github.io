@@ -71,9 +71,9 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ## <a name="lemmatization"></a> Lemmatization
 
 ## <a name="text-summarization"></a>Odia text summarization
-- [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf) by IIIT Bhubaneswar
-- [Automatic Text Summarization for Oriya Language](https://www.researchgate.net/publication/290977681_Automatic_Text_Summarization_for_Oriya_Language) by North Orissa University
+- [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf)
+- [Automatic Text Summarization for Oriya Language](https://www.ijcaonline.org/research/volume132/number1/biswas-2015-ijca-907258.pdf)
 
 ## <a name="ocr"></a> Optical Character Recognition of Odia script
 
-- [Automatic recognition of printed Oriya script](https://www.ias.ac.in/article/fulltext/sadh/027/01/0023-0034) by Indian Statistical Institute, Kolkata
+- [Automatic recognition of printed Oriya script](https://www.ias.ac.in/article/fulltext/sadh/027/01/0023-0034)
