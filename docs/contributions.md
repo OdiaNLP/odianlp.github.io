@@ -109,3 +109,14 @@ $ pip install Faker
 <p align="center">
   <img width="560" height="400" src="/images/covid19_screenshot.png">
 </p>
+
+## OpenOdia Library
+
+[OpenOdia](https://openodia.soumendrak.com/) is a consolidated tool built for Odia language. It consists of various needed tools for Odia language like:
+
+1. Work tokenization
+2. Sentence tokenization
+3. Stopword removal
+4. Google Translate wrapper
+5. Automatic text summarization
+6. Odia name generation

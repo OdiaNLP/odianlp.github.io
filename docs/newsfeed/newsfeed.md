@@ -2,6 +2,11 @@
 
 ## 2021
 
+### October
+
+- **1st Oct**
+  - [OpenOdia](https://openodia.soumendrak.com/) project reference added.
+
 ### September
 
 - **6th Sep**

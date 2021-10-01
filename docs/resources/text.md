@@ -21,7 +21,7 @@ Coming soon...
 
 - [Odia-NLP-Resource-Catalog](https://github.com/shantipriyap/Odia-NLP-Resource-Catalog) by Dr. Shantipriya Parida
 - [A Catalog of resources for Indian language NLP](https://github.com/AI4Bharat/indicnlp_catalog) by AI4Bharat team
-
+- [OpenOdia : Tools for Odia language](https://github.com/soumendrak/openodia)
 <!-- Citation -->
 <hr>
 To cite this resource list, please use:

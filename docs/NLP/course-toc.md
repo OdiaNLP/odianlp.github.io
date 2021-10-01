@@ -50,13 +50,14 @@ These are the basic knowledge needed to go ahead with this course.
 
 1. RegEx[^4]
 2. Tokenization
-3. Frequency Distribution
-4. Bigrams, Trigrams and Ngrams
-5. Stopwords
-6. Stemming
-7. Lemmatization [^1]
-8. POS tagging
-9. Named Entity Recognition
+3. Bag of words model based on count and frequency
+4. Frequency Distribution
+5. Bigrams, Trigrams and Ngrams
+6. Stopwords
+7. Stemming
+8. Lemmatization [^1]
+9. POS tagging
+10. Named Entity Recognition
 
 ## Sentence Structure Analysis
 
