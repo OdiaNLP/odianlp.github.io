@@ -20,7 +20,7 @@
     - More data added to the [Dictionary](../../dictionary) project documentation.
 
 - **8th Aug:**  
-    This website have been upgraded.
+    This website has been upgraded.
     - Tabs moved from left to top.
     - [mte2o.com](https://www.mte2o.com) domain pointed here.
     - Both light and dark theme added.
