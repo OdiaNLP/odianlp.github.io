@@ -4,6 +4,10 @@
 
 ### October
 
+- **6th Oct**
+  - The English Odia dictionary datasets cleaned. 
+  - Which got reduced by around 7000 word pairs. Currently, we have 2,08,046 number of parallel English and Odia word/phrase pairs.
+  - The dataset can be found in the [Kaggle](https://www.kaggle.com/soumendrak/dictionary-english-odia-word-pairs?select=En-Or_word_pairs_v2.json). This will be soon added into the [OpenOdia](https://openodia.soumendrak.com/) Python library.
 - **1st Oct**
   - [OpenOdia](https://openodia.soumendrak.com/) project reference added.
 

@@ -100,7 +100,7 @@ I have chosen to go ahead with the 3rd approach.
 
 ???+note "Future Work"
     - [ ] Host the dictionary in a stable server.
-    - [ ] Upload the English-Odia dictionary data to Kaggle.
+    - [x] Upload the English-Odia dictionary data to Kaggle.
 
 [^1]: https://cloud.google.com/translate/quotas
 [^2]: https://stackoverflow.com/q/7646112/5014656
