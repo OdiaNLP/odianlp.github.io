@@ -32,28 +32,12 @@ This list contains the proposals for the projects which can be started with Odia
 
 ## <a name="monolingual-corpus"></a> Monolingual corpus
 
-- For many NLP related tasks a large [monolingual corpus](https://en.wikipedia.org/wiki/Text_corpus) is a necessity.
-- As the name suggest a monolingual corpus (MC) stores text of only one language. In this case it will be of Odia.
-- The MC mainly consists of full sentences.
-
-### Odia Wikipedia as an MC provider
-
-- The major provider of MC data can be found in Odia Wikipedia.
-- The source code to crawl and extract Wikipedia data can be found [here](https://github.com/goru001/nlp-for-odia/tree/master/datasets-preparation)
-- You can directly get the dump from the Wikimedia site itself, you can get data dump of both Wikisource (Odia books) and Wikipedia (Odia articles) from [this site](https://dumps.wikimedia.org/backup-index.html). Need to cleanup a bit as well.
-
-### How-to do?
-
-This is a data collection project.  
-
-1. Extract the content from various websites with CC license by writing [web crawlers](https://en.wikipedia.org/wiki/Web_crawler) or taking wikipedia dump  
-2. Clear the corpus.  
-3. Prepare an Odia language sentences corpus.
+- Please check the [resources page](/resources/text/#monolingual-corpus) for existing corpus details.
 
 ## <a name="lang-detector"></a> Language detector
 
-Given a text string, detect its language.
-It should identify if Odia language text are given.
+- Given a text string, detect its language. It should identify if Odia language text are given.
+- An existing language detector can be found in [OpenOdia project](https://openodia.soumendrak.com/#detect-odia-language).
 
 ### Existing Algorithms
 
@@ -71,6 +55,8 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ## <a name="lemmatization"></a> Lemmatization
 
 ## <a name="text-summarization"></a>Odia text summarization
+- 
+- An existing extractive word-frequency based text summarizer is implemented in the [OpenOdia project](https://openodia.soumendrak.com/#automatic-extractive-text-summarization).  
 - [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf)
 - [Automatic Text Summarization for Oriya Language](https://www.ijcaonline.org/research/volume132/number1/biswas-2015-ijca-907258.pdf)
 

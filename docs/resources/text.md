@@ -1,5 +1,12 @@
 This page contains probable open source resources found over internet on Odia text.
 
+## Monolingual Corpus
+
+- For much NLP related tasks a large [monolingual corpus](https://en.wikipedia.org/wiki/Text_corpus) is a necessity.
+- As the name suggest a monolingual corpus stores text of only one language. In this case it will be of Odia.
+- An existing monolingual corpus can be found in the [IndicNLP corpus](https://indicnlp.ai4bharat.org/corpora/) with 6.94 million sentences formed of 107 million tokens.
+- Similarly, you can check this [resource list](https://github.com/shantipriyap/Odia-NLP-Resource-Catalog#monolingual-corpus) by Dr. Shantipriya Parida for further monolingual corpus in Odia language 
+
 ## Parallel Corpus
 
 Dataset | License | Need to be cleaned? | Estimated number of pairs | Note
@@ -13,9 +20,20 @@ Dataset | License | Need to be cleaned? | Estimated number of pairs | Note
  [Mann ki baat](http://data.statmt.org/pmindia/v1/parallel/pmindia.v1.or-en.tsv) |[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | Yes | 38,359 | High quality translation and [much more](https://arxiv.org/pdf/2001.09907.pdf). However, cleaning needs to be done.
  [IndoWordnet](https://github.com/anoopkunchukuttan/indowordnet_parallel) |[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | - | 30,000+ | Corpus quality need to be checked.
 
-## Monolingual Corpus
+## Odia Transliteration
 
-Coming soon...
+- Odia Wikimedia community has developed an [open-source unicode converter](https://github.com/OdiaWikimedia/Converter) to transliterate between various languages to Odia language.
+
+    ??? note "Languages supported"
+        - The following languages are supported now:
+              - Ahamiya
+              - Bengali
+              - Santali
+              - Hindi
+              - Gujarati
+              - Roman and
+              - Urdu
+- [Online demo](https://or.wikipedia.org/s/1hv1)
 
 ## Additional Resources
 
