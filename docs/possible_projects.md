@@ -49,13 +49,37 @@ Given a sentence find out the part of speeches present on that sentence.
 Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 
 ## <a name="stemming"></a> Stemming
+
+??? note "Initial rough corpus"
+    - ["ଲେ", "ଠୁ", "ର", "ରେ", "ଟି", "ଟେ", "ଟା",
+    - ୁଥିଲେ
+    - ["ଥିଲେ", "ଥିଲ", "ଥିଲୁ", "ଥିଲି", 
+        "ଉଛେ", "ଉଛ", "ଉଛୁ", "ଉଛି", 
+        "ଇଛେ", "ଇଛ", "ଇଛୁ", "ଇଛି",
+         "ଅଛେ", "ଅଛ", "ଅଛୁ", "ଅଛି",
+        "ସିଛେ", "ସିଛ", "ସିଛୁ", "ସିଛି",
+        "ଅନ୍ତେ", "ଅନ୍ତ", "ଅନ୍ତୁ", "ଅନ୍ତି",
+        "ଇଲେ", "ଇଲ", "ଇଲୁ", "ଇଲି",
+        "ଇବେ", "ଇବ", "ଇବୁ", "ଇବି",
+        "ଥିବେ", "ଥିବ", "ଥିବୁ", "ଥିବି",
+        "ଟାକୁ", "ଟାକେ", "ଟିର", "ଟିରେ", "ଟିଏ", "ମାନେ", "ଗୁଡ଼ା"]
+    - ["ଗୁଡ଼ାଏ", "ଗୁଡ଼ାକ",] 
+
+#### Largest substring approach
+- By using the largest suffix substring removal process as shown in [this code](https://github.com/sainimohit23/hindi-stemmer/blob/master/stemmer.py) by Mohit for Hindi language. 
+- In Odia language by using a specific set of suffixes we can omit critical information form the sentence.
+- For example the suffixes like _uthilu_, _uthibe_ describes about the tense of the sentence, whether it is in future or past or present.
+- Similarly, there will be exceptions throughout the process and we can not use a generic set of suffixes to stem.
+- Therefore, a better method need to be found out.
+
+#### Existing work
+
 - [A Suffix Stripping Algorithm for Odia Stemmer](https://docplayer.net/55951889-A-suffix-stripping-algorithm-for-odia-stemmer.html) by Utkal university with 88% accuracy.
 - [Design of Lightweight stemmer for Odia Derivational Suffixes](https://ijarcce.com/wp-content/uploads/2012/03/IJARCCE2I-A-Excellent-DESIGN.pdf) by Govt. college of Engineering Keonjhar with 85% accuracy.
 
-## <a name="lemmatization"></a> Lemmatization
 
 ## <a name="text-summarization"></a>Odia text summarization
-- 
+
 - An existing extractive word-frequency based text summarizer is implemented in the [OpenOdia project](https://openodia.soumendrak.com/#automatic-extractive-text-summarization).  
 - [Extrative text summarization](https://research.ijais.org/volume1/number3/ijais12-450135.pdf)
 - [Automatic Text Summarization for Oriya Language](https://www.ijcaonline.org/research/volume132/number1/biswas-2015-ijca-907258.pdf)
