@@ -47,7 +47,7 @@ theme:
       icon: material/weather-night
       name: Switch to light mode
   font:
-    text: Roboto
+    text: Space Grotesk
     code: Roboto Mono
   favicon: images/logo.png
 
