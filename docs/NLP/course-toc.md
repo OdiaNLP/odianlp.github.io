@@ -6,7 +6,7 @@ These are the topics which will be covered in this course.
 
 These are the basic knowledge needed to go ahead with this course.
 
-1. Basic Python programming knoweldge which includes
+1. Basic Python programming knowledge which includes
     1. Python data types: string, integer, list, set and dictionary
     2. Basic looping using for loop
     3. Conditional operators if..else
@@ -27,12 +27,13 @@ These are the basic knowledge needed to go ahead with this course.
      1. [Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8)
      2. [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw)
      3. [Python Tutorial For Beginners In Hindi (With Notes) 🔥](https://www.youtube.com/watch?v=gfDE2a7MKjA)
+
 ## Introduction
 
 0. Application of NLP in industry[^8]
     <!-- This part is about changing the mindset of students along with increasing curiosity in them -->
     - There are many ways we can showcase how NLP is helping the world. We can start with a few examples:
-        - Characters and the unicodes behind them
+        - Characters and the unicode behind them
         - Summarization
         - Sentiment analysis
 1. Curriculum

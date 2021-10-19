@@ -7,7 +7,6 @@
 [Mozilla Common Voice](https://commonvoice.mozilla.org/or/datasets) | [CC-0](https://creativecommons.org/publicdomain/zero/1.0/) | No | 7hrs (out of which ~1 hr verified) | Odia text to speech/Speech to text corpus. Our team [actively contribute](../../contributions/#mozilla-common-voice) on this project.
 [Odia Pronunciations](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation) | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) | No | 20,000+ words/phrases |
 
-- Odia text to speech transliteration based project has been started by 
 
 <!-- Citation -->
 <hr>
