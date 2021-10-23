@@ -25,3 +25,5 @@ The UI will have two tabs:
 ## Solution
 
 - <https://mte2o-review.herokuapp.com> building is in progress.
+
+--8<-- "includes/abbreviations.md"

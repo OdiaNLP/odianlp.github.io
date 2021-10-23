@@ -138,3 +138,5 @@ These are few places where relevant data may be present, however getting the dat
 - [A Gold Standard Odia Raw Text Corpus](https://data.ldcil.org/text/text-raw-corpus/a-gold-standard-odia-raw-text-corpus) : Around 15, 88, 287 words are there in this corpus available to purchase.
 
 *"In my dream of the 21st century for the State, I would have young men and women who put the interest of the State before them. They will have pride in themselves, confidence in themselves. They will not be at anybody’s mercy, except their own selves. By their brains, intelligence and capacity, they will recapture the history of Kalinga." - [Biju Pattnaik](https://en.wikipedia.org/wiki/Biju_Patnaik)*
+
+--8<-- "includes/abbreviations.md"

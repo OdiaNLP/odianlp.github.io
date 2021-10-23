@@ -15,3 +15,5 @@
 ### Good to have
 
 - Real time streaming tweet extraction
+
+--8<-- "includes/abbreviations.md"

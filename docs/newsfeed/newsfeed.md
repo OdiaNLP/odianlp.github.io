@@ -47,3 +47,5 @@
 ### August
 
 - **28th Aug:** [Blog post](https://globalvoices.org/2020/08/28/indias-odia-language-added-to-google-and-microsoft-translation-services/) on "India’s Odia language added to Google and Microsoft translation services"
+
+--8<-- "includes/abbreviations.md"

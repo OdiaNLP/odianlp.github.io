@@ -150,3 +150,5 @@ _This project has been moved from [MTEnglish2Odia](https://github.com/soumendrak
     - OdiaNLP has [few projects](projects) going on currently. Most of the projects are in data collection and data cleaning phase.
     - We also want to start new projects. The [possible projects lists](possible_projects) are there and need helping hands to start making active contributions.
     - You can [send an email](mailto:proud_odia@outlook.com) to get help from like minded people.
+
+--8<-- "includes/abbreviations.md"

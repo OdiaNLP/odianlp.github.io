@@ -20,3 +20,4 @@ To cite this resource list, please use:
     year         = {2021}
 }
 ```
+--8<-- "includes/abbreviations.md"

@@ -115,3 +115,5 @@ These are the basic knowledge needed to go ahead with this course.
 [^8]: https://data-flair.training/blogs/nlp-tutorial-natural-language-processing/
 [^9]: https://www.udemy.com/course/data-science-natural-language-processing-in-python/
 [^10]: https://www.udemy.com/course/nlp-with-transformers/
+
+--8<-- "includes/abbreviations.md"

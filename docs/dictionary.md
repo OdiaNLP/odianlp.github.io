@@ -119,3 +119,4 @@ To cite this page, please use:
         year         = {2021}
     }
 ```
+--8<-- "includes/abbreviations.md"

@@ -120,3 +120,5 @@ $ pip install Faker
 4. Google Translate wrapper
 5. Automatic text summarization
 6. Odia name generation
+
+--8<-- "includes/abbreviations.md"

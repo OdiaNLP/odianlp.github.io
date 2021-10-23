@@ -31,3 +31,5 @@
 
 - The dictionary data has been extracted from Odia Purnachandra Bhashakosha.
 - The source code repository for the dataset are in: [OdiaNLP/dictionary](https://github.com/OdiaNLP/dictionary)
+
+--8<-- "includes/abbreviations.md"

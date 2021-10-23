@@ -12,3 +12,5 @@ The biggest Issues I am receiving to collect the parallel corpus is sentences al
 1. Using a set of pre-translated words pairs to match among the sentence pairs.
 2. Using numbers among the pairs to match.
 3. Crawl the entire [purnachandra bhashakosh](https://dsalsrv04.uchicago.edu/dictionaries/praharaj/) and prepare the dictionary.
+
+--8<-- "includes/abbreviations.md"

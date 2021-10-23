@@ -20,7 +20,7 @@ theme:
   highlights: true
   logo: images/logo.png
 
-  # Don't include MkDocs' JavaScript
+  # Don't includes MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
 

@@ -87,3 +87,5 @@ Part of speech can be verb, noun, adjective, pronoun, preposition, etc.
 ## <a name="ocr"></a> Optical Character Recognition of Odia script
 
 - [Automatic recognition of printed Oriya script](https://www.ias.ac.in/article/fulltext/sadh/027/01/0023-0034)
+
+--8<-- "includes/abbreviations.md"

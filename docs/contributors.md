@@ -9,3 +9,5 @@ Major contributors to the project:
 - [Soumendra Kumar Sahoo](https://www.soumendrak.com/)
 - [Subhadarshi Panda](https://github.com/subhadarship)
 - [Subhashish Panigrahi](https://twitter.com/subhapa)
+
+--8<-- "includes/abbreviations.md"

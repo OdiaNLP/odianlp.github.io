@@ -33,3 +33,5 @@ This is the consolidated note from the above two professors:
     4. Grammar
         * Descriptive standard grammar needs to be there.
         * Book available on market are not Odia grammar
+
+--8<-- "includes/abbreviations.md"
