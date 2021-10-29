@@ -136,6 +136,7 @@ nav:
             - UI for corpus generation: machine_translation/ui_for_corpus_generation.md
             - Tweets extraction: machine_translation/tweets_extraction.md
     - Dictionary: dictionary.md
+    - Word Embedding: wordEmbedding.md
     - Others: contributions.md
   - Resources:
     - Text: resources/text.md
