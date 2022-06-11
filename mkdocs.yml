@@ -1,16 +1,13 @@
 # Website
-site_name: OdiaNLP
+site_name: OdishaMLSchool
 site_url: https://odianlp.github.io/
 site_author: Soumendra Kumar Sahoo
 site_description: >-
-  A website about ongoing progress on NLP(Natural Language Processing) and beyond for Odia language.
+  Odisha in ML Summer School Instruction Materials.
 
 # Repository
-repo_name: OdiaNLP
-repo_url: https://github.com/OdiaNLP/odianlp.github.io
-
-# Copyright
-copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a> This Website's documentation work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+repo_name: OdishaMLSchool
+repo_url: https://github.com/odisha-ml/OdishaMLSchool
 
 
 # Configuration
