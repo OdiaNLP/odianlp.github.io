@@ -37,7 +37,7 @@ This repository contains the instructions, guidelines, place holder for storing 
 * Prof. Peeta Basa Pati (Image Processing)
 * Dr. Ravi Shankar Prasad (Speech Processing)
 * Mr. Sakyasingha Mohapatra (Robotics)
-Mr. Prabhu Teja (Deep Learning)
+* Mr. Prabhu Teja (Deep Learning)
 
 
 
