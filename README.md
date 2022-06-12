@@ -28,6 +28,16 @@ This repository contains the instructions, guidelines, place holder for storing 
 
 
 ## Mentor List 
+* Mr. Soumendra Sahoo (NLP)
+* Mr. Subhadadarshi Panda (NLP - Machine Translation)
+* Dr. Shantipriya Parida (NLP - Machine Translation, Topic Modeling, Text Summarization, Language Detection)
+* Mrs. Kusumlata Patiyal (NLP - Mention Detection, Co-reference Resoultion)
+* Mr. Sambit Sekhar (NLP - Recommendation Engine)
+* Mr.  Abhijeet Parida (Computer Vision)
+* Prof. Peeta Basa Pati (Image Processing)
+* Dr. Ravi Shankar Prasad (Speech Processing)
+* Mr. Sakyasingha Mohapatra (Robotics)
+Mr. Prabhu Teja (Deep Learning)
 
 
 
