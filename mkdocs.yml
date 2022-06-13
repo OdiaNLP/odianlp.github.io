@@ -29,7 +29,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - tabs
-    - toc.integrate
+    # - toc.integrate  Uncommenting this makes one side ToC
   palette:
   - scheme: default
     primary: indigo
@@ -97,20 +97,20 @@ markdown_extensions:
 
 # Customization
 extra:
-  homepage: https://www.mte2o.com
+  homepage: https://www.odisha.ml
   analytics:
     provider: google
     property: G-6V5C6Z523T
 
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/OdiaNLP
-    - icon: fontawesome/brands/stack-overflow
-      link: https://stackoverflow.com/users/5014656/soumendra?tab=profile
+      link: https://github.com/odisha-ml
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/soumendra_ks
+      link: https://twitter.com/odias_in_ml
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/soumendrakumarsahoo/
+      link: https://www.linkedin.com/groups/8973063/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCaoGfM_49C8kcKqyTh-fr6Q/
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
@@ -119,3 +119,16 @@ extra_javascript:
 nav:
   - Home: 
     - About: index.md
+  - Odisha ML School: 
+    - About: OdishaMLSchool.md
+    - Mini-Projects:
+      - MiniProject1: mini-projects/mini-project-1/mp1_readme.md
+      - MiniProject2: mini-projects/mini-project-2/mp2_readme.md
+      - MiniProject3: mini-projects/mini-project-3/mp3_readme.md
+      - MiniProject4: mini-projects/mini-project-4/mp4_readme.md
+      - MiniProject5: mini-projects/mini-project-5/mp5_readme.md
+      - MiniProject6: mini-projects/mini-project-6/mp6_readme.md
+      - MiniProject7: mini-projects/mini-project-7/mp7_readme.md
+      - MiniProject8: mini-projects/mini-project-8/mp8_readme.md
+      - MiniProject9: mini-projects/mini-project-9/mp9_readme.md
+      - MiniProject10: mini-projects/mini-project-10/mp10_readme.md

@@ -1,3 +1,54 @@
-# OdishaMLSchool22
+# Odisha ML Summer School
 
-This page is about the Odisha Machine Learning Summer School 2022.
+## About
+This repository contains the instructions, guidelines, place holder for storing the artifacts of AI Machine Learning Summer School (Odisha ML Summer School in short) organized by the <a href="https://www.ocfodisha.org/">Odisha Corporate Foundation (OCF)</a>  and <a href="https://www.odisha.ml/">Odias in Machine Learning (OdiaML)</a> in 2022.
+
+### Instructions for the participants
+* All the participants will be divided into equal groups. 
+* Participants in each group have to nominate one member as a group leader for representing their group.
+* Each group can select a mini-project defined already or they can also come up with their own.
+* The group leader can distribute the task and coordinate with team members and mentors.
+* Participants of each group can select a name for their group.
+* Participants can use the established discord channel for all communication among each other and with the mentor during the event.
+* All group has to present their work for evaluation at the end of the event.
+* The best three teams will be announced by the evaluators.
+
+#### Setup instructions
+
+* Code and data location
+* Environment setup i.e. in GCP, Azure, AWS, etc.
+* Python/Anaconda setup
+* Colab setup
+
+### Instructions for the Mentors
+* Each mentor needs to provide at least one problem statement to exercise by a group during the summer school.
+* During problem definition, consider the timeline of 2-3 weeks, and resources (CPU).
+* Mentor needs to prepare a guideline and instructions (environment setup, data source, etc.) for execution.
+* Mentor and team can communicate using the established channel and meeting as per agreed time.
+* It suggest that mentor ensure active participants of each member.    
+
+## Mentor List 
+* Mr. Soumendra Sahoo (NLP)
+* Mr. Subhadadarshi Panda (NLP - Machine Translation)
+* Dr. Shantipriya Parida (NLP - Machine Translation, Topic Modeling, Text Summarization, Language Detection)
+* Mrs. Kusumlata Patiyal (NLP - Mention Detection, Co-reference Resoultion)
+* Mr. Sambit Sekhar (NLP - Recommendation Engine)
+* Mr.  Abhijeet Parida (Computer Vision)
+* Prof. Peeta Basa Pati (Image Processing)
+* Dr. Ravi Shankar Prasad (Speech Processing)
+* Mr. Sakyasingha Mohapatra (Robotics)
+* Mr. Prabhu Teja (Deep Learning)
+
+
+## Mini-Project details
+
+1. [Mini-Project-1](#mini-projects/mini-project-1/mp1_readme/)
+2. [Mini-Project-2](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-2)
+3. [Mini-Project-3](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-3)
+4. [Mini-Project-4](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-4)
+5. [Mini-Project-5](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-5)
+6. [Mini-Project-6](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-6)
+7. [Mini-Project-7](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-7)
+8. [Mini-Project-8](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-8)
+9. [Mini-Project-9](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-9)
+10. [Mini-Project-10](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-10)

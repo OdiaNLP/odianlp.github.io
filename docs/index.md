@@ -29,7 +29,7 @@ We undertake the following activities to achieve our mission by:
 
 ## REACH OUT TO US
 
-- [Website](https://www.odisha.ml/index.html)
+- [Website](https://www.odisha.ml/)
 - [Linkedin](https://www.linkedin.com/groups/8973063/)
 - [Youtube](https://www.youtube.com/channel/UCaoGfM_49C8kcKqyTh-fr6Q/)
 - [Twitter](https://twitter.com/odias_in_ml)
