@@ -20,13 +20,6 @@ This repository contains the instructions, guidelines, place holder for storing 
 * Mentor and team can communicate using the established channel and meeting as per agreed time.
 * It suggest that mentor ensure active participants of each member.    
 
-## Mini-Project List
-
-1. 
-
-
-
-
 ## Mentor List 
 * Mr. Soumendra Sahoo (NLP)
 * Mr. Subhadadarshi Panda (NLP - Machine Translation)
@@ -40,4 +33,15 @@ This repository contains the instructions, guidelines, place holder for storing 
 * Mr. Prabhu Teja (Deep Learning)
 
 
+## Mini-Project details
 
+1. [Mini-Project-1]()
+2. [Mini-Project-2]()
+3. [Mini-Project-3]()
+4. [Mini-Project-4]()
+5. [Mini-Project-5]()
+6. [Mini-Project-6]()
+7. [Mini-Project-7]()
+8. [Mini-Project-8]()
+9. [Mini-Project-9]()
+10. [Mini-Project-10]()
