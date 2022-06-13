@@ -122,13 +122,13 @@ nav:
   - Odisha ML School: 
     - About: OdishaMLSchool.md
     - Mini-Projects:
-      - MiniProject1: mini-projects/mini-project-1/mp1_readme.md
-      - MiniProject2: mini-projects/mini-project-2/mp2_readme.md
-      - MiniProject3: mini-projects/mini-project-3/mp3_readme.md
-      - MiniProject4: mini-projects/mini-project-4/mp4_readme.md
-      - MiniProject5: mini-projects/mini-project-5/mp5_readme.md
-      - MiniProject6: mini-projects/mini-project-6/mp6_readme.md
-      - MiniProject7: mini-projects/mini-project-7/mp7_readme.md
-      - MiniProject8: mini-projects/mini-project-8/mp8_readme.md
-      - MiniProject9: mini-projects/mini-project-9/mp9_readme.md
-      - MiniProject10: mini-projects/mini-project-10/mp10_readme.md
+      - MiniProject1: mini-projects/mp1/readme.md
+      - MiniProject2: mini-projects/mp2/readme.md
+      - MiniProject3: mini-projects/mp3/readme.md
+      - MiniProject4: mini-projects/mp4/readme.md
+      - MiniProject5: mini-projects/mp5/readme.md
+      - MiniProject6: mini-projects/mp6/readme.md
+      - MiniProject7: mini-projects/mp7/readme.md
+      - MiniProject8: mini-projects/mp8/readme.md
+      - MiniProject9: mini-projects/mp9/readme.md
+      - MiniProject10: mini-projects/mp10/readme.md

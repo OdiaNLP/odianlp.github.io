@@ -38,17 +38,3 @@ This repository contains the instructions, guidelines, place holder for storing 
 * Dr. Ravi Shankar Prasad (Speech Processing)
 * Mr. Sakyasingha Mohapatra (Robotics)
 * Mr. Prabhu Teja (Deep Learning)
-
-
-## Mini-Project details
-
-1. [Mini-Project-1](#mini-projects/mini-project-1/mp1_readme/)
-2. [Mini-Project-2](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-2)
-3. [Mini-Project-3](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-3)
-4. [Mini-Project-4](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-4)
-5. [Mini-Project-5](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-5)
-6. [Mini-Project-6](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-6)
-7. [Mini-Project-7](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-7)
-8. [Mini-Project-8](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-8)
-9. [Mini-Project-9](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-9)
-10. [Mini-Project-10](https://github.com/odisha-ml/odisha-ml.github.io/tree/master/docs/mini-projects/mini-project-10)
