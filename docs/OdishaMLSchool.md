@@ -1,4 +1,4 @@
-# Odisha ML Summer School
+# Odisha ML Summer School 2022
 
 ## About
 This repository contains the instructions, guidelines, place holder for storing the artifacts of AI Machine Learning Summer School (Odisha ML Summer School in short) organized by the <a href="https://www.ocfodisha.org/">Odisha Corporate Foundation (OCF)</a>  and <a href="https://www.odisha.ml/">Odias in Machine Learning (OdiaML)</a> in 2022.
@@ -28,10 +28,10 @@ This repository contains the instructions, guidelines, place holder for storing 
 * It suggest that mentor ensure active participants of each member.    
 
 ## Mentor List 
-* Mr. Soumendra Sahoo (NLP)
+* Mr. Soumendra Kumar Sahoo (Python, NLP)
 * Mr. Subhadadarshi Panda (NLP - Machine Translation)
 * Dr. Shantipriya Parida (NLP - Machine Translation, Topic Modeling, Text Summarization, Language Detection)
-* Mrs. Kusumlata Patiyal (NLP - Mention Detection, Co-reference Resoultion)
+* Mrs. Kusumlata Patiyal (NLP - Mention Detection, Co-reference Resolution)
 * Mr. Sambit Sekhar (NLP - Recommendation Engine)
 * Mr.  Abhijeet Parida (Computer Vision)
 * Prof. Peeta Basa Pati (Image Processing)

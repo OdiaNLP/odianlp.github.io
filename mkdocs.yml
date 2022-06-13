@@ -32,13 +32,13 @@ theme:
     # - toc.integrate  Uncommenting this makes one side ToC
   palette:
   - scheme: default
-    primary: indigo
+    primary: brown
     accent: blue
     toggle:
       icon: material/weather-sunny
       name: Switch to dark mode
   - scheme: slate
-    primary: green
+    primary: teal
     accent: blue
     toggle:
       icon: material/weather-night
