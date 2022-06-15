@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img width="500" height="300" src="misc/RecSys.jpg" />
+  <img width="500" height="300" src="https://raw.githubusercontent.com/odisha-ml/odisha-ml.github.io/master/docs/mini-projects/mp7/misc/RecSys.jpg" />
 </p>
 
 </br>
@@ -70,7 +70,7 @@ Project Structure
 </br>
 <p align="left">
 
-In this competition, we need to develop News recommendations based on data from previous transactions, as well as from product meta data. The available meta data description can be find inside docs folder
+In this Project, we need to develop News recommendations based on data from previous transactions, as well as from product meta data. The available meta data description can be find inside docs folder
 <p>
 
 </br>
@@ -78,7 +78,7 @@ In this competition, we need to develop News recommendations based on data from 
 
 
 <p align="center">
-  <img width="600" height="300" src="misc/Workflow.jpg" />
+  <img width="600" height="300" src="https://raw.githubusercontent.com/odisha-ml/odisha-ml.github.io/master/docs/mini-projects/mp7/misc/Workflow.jpg" />
 </p>
 
 
