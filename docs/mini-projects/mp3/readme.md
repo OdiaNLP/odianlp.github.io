@@ -1,5 +1,3 @@
-# Mini-project details
-
 <h1 align="center"> Project: Traffic Violation Detection</h1>
 
 <p align="center">
@@ -31,4 +29,4 @@ Who is an unruly driver on the highways?
 Refer to the [boilerplate code](https://github.com/odisha-ml/SummerSchool2022/tree/main/Day2_Session1_ComputerVision/Demo) to get started.
 ## Bonus Point
 
-If you can extract the numberplate information of the unruly drivers
+If you can extract the numberplate information of the unruly drivers.
