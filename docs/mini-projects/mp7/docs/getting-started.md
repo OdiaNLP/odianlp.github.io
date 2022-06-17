@@ -3,7 +3,7 @@
 
 
 
-### Donload data
+### Download data
 
 Please download data from google drive link - 
 
