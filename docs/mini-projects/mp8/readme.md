@@ -1,4 +1,4 @@
-# Mini-project details
+# AD Insertion Platform
 
 ![image](https://user-images.githubusercontent.com/68345490/174316583-fdf46630-82b7-420b-b114-c59ce8e08d98.png)
 ## Problem statement / Opportunity
