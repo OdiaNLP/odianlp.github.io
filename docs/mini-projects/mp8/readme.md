@@ -10,7 +10,7 @@ We want to build a system that uses their permitted screen space for monetizatio
 
 ## Can you think of any idea, lets get in touch!
 Idea : [Aditya kumar](https://wa.me/919078146574)
-
+It will be a live project cum Opportunity to join our venture!
 
 ## Solution
 ### • Seamless In-content Ad Integration for Live Streamers 
