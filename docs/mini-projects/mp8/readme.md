@@ -4,10 +4,10 @@
 ## Problem statement / Opportunity
 Live streaming video is expected to account for as much as 84% of all internet traffic in 2020, and the total value of the live streaming industry is estimated to top $124 billion by 2025. 
 That’s a lot of traffic – and a lot of potential ad dollars.
-How can we tap into this market?
+## How can we tap into this market?
 As of now, there are lot of screen space from LIVE streamers which can be monetized.
 We want to build a system that uses their permitted screen space for monetization.
-##Can you think of any idea, lets get in touch!
+## Can you think of any idea, lets get in touch!
 
 
 Idea : [Aditya kumar](https://wa.me/919078146574)
