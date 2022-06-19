@@ -66,9 +66,32 @@ Project Structure
 --------
 </br>
 
+
+<h1 align="left">Objective</h1>
+
+Imagine that you all are part of a digital news startup as a ML engineer, to increase CTRs (Click through Rate) on news website, CEO makes the decision to opt for a recommendation system. By opting for Recsys users will be able to get highly personalized and more relevant news article, by which users will spend more time on reading more news. This will help news website to increase web traffic and can act as a marketing tool.
+
+So you need to implement
+
+1. Top N popular news at a certain time interval.
+2. Top N review news, showing news which user have not read
+3. Top N content based(similar news). As eg If someone read about “tsunami due to climate change” then recommended news will be regarding “tsunami and climate change”.
+4. Top N news based on past transactions. All users have a unique trend of reading, like if someone have trend of reading first sport news -> then political news -> then bollywood news. Then other users start with sports news then our algo must recommend the other two(political, bollywood).
+
+</br>
+At last we will use Ranking Algorithm to make more personalized recommendations for specific user.
+
+
+You can showcase your project by using streamlit (https://streamlit.io/).
+
+
+
+
+</br>
+
 ### Overview regarding Project
 
-In this Project, we need to develop News recommendations based on data from previous transactions, as well as from product meta data. The available meta data description can be find inside docs folder
+In this Project, we need to develop News recommendations based on data from previous transactions, as well as from product meta data. The available meta data description can be find inside docs folder and 
 
 <h4 align="center">News Recommendation System Workflow</h4>
 
@@ -76,6 +99,8 @@ In this Project, we need to develop News recommendations based on data from prev
   <img width="600" height="300" src="https://raw.githubusercontent.com/odisha-ml/odisha-ml.github.io/master/docs/mini-projects/mp7/misc/Workflow.jpg" />
 </p>
 
+
+</br>
 
 ## Dataset Format
 
