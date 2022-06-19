@@ -55,9 +55,9 @@ The Odia dialect dataset will be helpful for many NLP researchers for research, 
  
 5. Labeled the text with dialect id.
 
-   Text  |  Language_Id
-   ------|-------------
-   XXXXX |  odia-sam
+   Text                                         |  Language_Id
+   ---------------------------------------------|-------------
+   ଆମର୍ ସମ୍ବଲପୁରୀ ଜେନ ଥିଲେଁବି ବାରିହେସି,ଝଲ୍'ସି ଉଠ୍'ସି । |  odia-sam
    XXXXX |  odia-gjm
    XXXXX | odia-ctc
    XXXXX | odia-dsy
