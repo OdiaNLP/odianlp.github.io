@@ -5,6 +5,10 @@ Mentor: Dr. Shantipriya Parida
 ## Overview
 Language detection is a key part of the NLP pipeline for text processing. The task of automatically detecting languages belonging to disjoint groups is relatively easy. It is considerably challenging to detect languages that have similar origins or dialects. Although dialect identification is commonly based on the distributions of letters or letter n-grams, it may not be possible to distinguish related dialects with very similar phoneme and grapheme inventories for some languages.
 
+<p align="center">
+  <img src="dialect1.png" width="300" height="150">
+</p>
+
 Although Odia written script is same but there are many dialects available (as per wiki) shown below.
 
 ## Major forms or dialects
