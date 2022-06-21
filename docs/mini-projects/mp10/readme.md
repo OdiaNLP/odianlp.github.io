@@ -1,13 +1,13 @@
 # Odia Dialect Corpus
 
-Mentor: Dr. Shantipriya Parida<br/>
-Team Name: XXX<br/>
-Team Leader Name: Aniket Dash<br/>
+Mentor: Dr. Shantipriya Parida  
+Team Name: XXX  
+Team Leader Name: Aniket Dash  
 
-Mamber1 :<br/> 
-Name : Aniket Dash<br/>
-Institute Name: International Institute of Information Technology (IIIT),Bhubaneswar<br/>
-Current Education : BTech in Computer Engineering<br/>
+Mamber1 :  
+Name : Aniket Dash  
+Institute Name: International Institute of Information Technology (IIIT)Bhubaneswar  
+Current Education : BTech in Computer Engineering
 
 ## Overview
 Language detection is a key part of the NLP pipeline for text processing. The task of automatically detecting languages belonging to disjoint groups is relatively easy. It is considerably challenging to detect languages that have similar origins or dialects. Although dialect identification is commonly based on the distributions of letters or letter n-grams, it may not be possible to distinguish related dialects with very similar phoneme and grapheme inventories for some languages.
@@ -17,6 +17,7 @@ Language detection is a key part of the NLP pipeline for text processing. The ta
 Although Odia written script is same but there are many dialects available (as per wiki) shown below.
 
 ## Major forms or dialects
+
 * Midnapori Odia: Spoken in the undivided Midnapore and Bankura Districts of West Bengal.
 * Singhbhumi Odia (Major Dialect): Spoken in East Singhbhum, West Singhbhum and Saraikela-Kharsawan district of Jharkhand
 * Baleswari Odia: Spoken in Baleswar, Bhadrak and Mayurbhanj district of Odisha.
@@ -31,18 +32,18 @@ Although Odia written script is same but there are many dialects available (as p
 * 'Berhampuriya Odia': Spoken mainly in Berhampur
 * 'Laria/Chhattisgarhi': Spoken in mainly Chattisgarrh. This is transitional language between Odia and Hindi . Often considered as a major dialect of Odia. It is spoken in 25 districts of Chhattisgarh.
 
-## Problem Statement :
+## Problem Statement
 
 As the written text follows the same Odia script, how to distinguish different dialects for many NLP applications (e.g. automatic identification of language for machine translation, text categorization) for different services.  Can machine learning techniques help to solve this ?.  
 
-## Possible Solution:
+## Possible Solution
 
 As machine learning models can easily identify the language based on the input text, it can be possible to train a model using supervised machine learning approach with labeled data to identify language with dialect variation. But to train such models need labeled dataset which contain text and the corresponding dialect with label.
 
-## Benefit:
+## Benefit
 The Odia dialect dataset will be helpful for many NLP researchers for research, and building NLP applications for specific dialects (Sambalpuri, Ganjami, Cuttacki, Desiya, Baleswari) which can be used by the people more familiar with their own dialect. 
 
-## Proposed Approach:
+## Proposed Approach
 
 1. Study the Odia dialects and find the major dialects such as:
    Sambalpuri Odia,  
