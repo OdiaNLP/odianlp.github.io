@@ -1,6 +1,13 @@
 # Odia Dialect Corpus
 
-Mentor: Dr. Shantipriya Parida
+Mentor: Dr. Shantipriya Parida<br/>
+Team Name: XXX<br/>
+Team Leader Name: Aniket Dash<br/>
+
+Mamber1 :<br/> 
+Name : Aniket Dash<br/>
+Institute Name: International Institute of Information Technology (IIIT),Bhubaneswar<br/>
+Current Education : BTech in Computer Engineering<br/>
 
 ## Overview
 Language detection is a key part of the NLP pipeline for text processing. The task of automatically detecting languages belonging to disjoint groups is relatively easy. It is considerably challenging to detect languages that have similar origins or dialects. Although dialect identification is commonly based on the distributions of letters or letter n-grams, it may not be possible to distinguish related dialects with very similar phoneme and grapheme inventories for some languages.
