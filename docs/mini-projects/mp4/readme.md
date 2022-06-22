@@ -21,7 +21,7 @@ Current Education: IMCA</br>
 
 Member3</br>
 Name : Ipsita Ankita Hota</br>
-Institute Name:Utkal University
+Institute Name:Utkal University</br>
 Current Education :IMCA</br>
 
 
