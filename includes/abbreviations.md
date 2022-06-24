@@ -9,3 +9,6 @@
 *[LVCSR]: large vocabulary continuous speech recognition
 *[QBE]: query by example
 *[OOV]: out–of–vocabulary
+*[SA]: Sentiment Analysis
+*[UGC]: User Generated Content
+*[ASBA]: Aspect Based Sentiment Analysis
