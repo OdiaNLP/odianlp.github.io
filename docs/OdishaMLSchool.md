@@ -29,7 +29,7 @@ This repository contains the instructions, guidelines, place holder for storing 
 
 ## Mentor List 
 * Mr. Soumendra Kumar Sahoo (Python, NLP)
-* Mr. Subhadadarshi Panda (NLP - Machine Translation)
+* Mr. Subhadarshi Panda (NLP - Machine Translation)
 * Dr. Shantipriya Parida (NLP - Machine Translation, Topic Modeling, Text Summarization, Language Detection)
 * Mrs. Kusumlata Patiyal (NLP - Mention Detection, Co-reference Resolution)
 * Mr. Sambit Sekhar (NLP - Recommendation Engine)
