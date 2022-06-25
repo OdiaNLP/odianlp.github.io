@@ -12,3 +12,4 @@
 *[SA]: Sentiment Analysis
 *[UGC]: User Generated Content
 *[ASBA]: Aspect Based Sentiment Analysis
+*[GUI]: Graphic User Interface
