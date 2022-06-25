@@ -2,7 +2,7 @@
 
 Mentor: [Subhadarshi Panda](https://www.linkedin.com/in/subhadarshi-panda-1ba5091a/)
 
-The **problem** is to identify abusive social media comments in Indian languages
+The **problem** is to identify abusive social media comments in Indian languages.
 
 Abuse is widely used in social media comments and it would be useful to detect it to flag it when necessary.
 
