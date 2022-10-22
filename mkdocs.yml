@@ -124,14 +124,21 @@ nav:
   - Odisha ML School: 
     - About: OdishaMLSchool.md
     - Mini-Projects:
-      - MiniProject1: mini-projects/mp1/readme.md
-      - MiniProject2: mini-projects/mp2/readme.md
-      - MiniProject3: mini-projects/mp3/readme.md
-      - MiniProject4: mini-projects/mp4/readme.md
-      - MiniProject5: mini-projects/mp5/readme.md
-      - MiniProject6: mini-projects/mp6/readme.md
-      - MiniProject7: mini-projects/mp7/readme.md
-      - MiniProject8: mini-projects/mp8/readme.md
-      - MiniProject9: mini-projects/mp9/readme.md
-      - MiniProject10: mini-projects/mp10/readme.md
-      - MiniProject11: mini-projects/mp11/readme.md
+      - MiniProject1: mini-projects/OiMLSchool2022/mp1/readme.md
+      - MiniProject2: mini-projects/OiMLSchool2022/mp2/readme.md
+      - MiniProject3: mini-projects/OiMLSchool2022/mp3/readme.md
+      - MiniProject4: mini-projects/OiMLSchool2022/mp4/readme.md
+      - MiniProject5: mini-projects/OiMLSchool2022/mp5/readme.md
+      - MiniProject6: mini-projects/OiMLSchool2022/mp6/readme.md
+      - MiniProject7: mini-projects/OiMLSchool2022/mp7/readme.md
+      - MiniProject8: mini-projects/OiMLSchool2022/mp8/readme.md
+      - MiniProject9: mini-projects/OiMLSchool2022/mp9/readme.md
+      - MiniProject10: mini-projects/OiMLSchool2022/mp10/readme.md
+      - MiniProject11: mini-projects/OiMLSchool2022/mp11/readme.md
+  - Faculty Development Program: 
+    - About: FDP.md
+    - Mini-Projects:
+      - MiniProject1: mini-projects/FDP2022/mp1/readme.md
+      - MiniProject2: mini-projects/FDP2022/mp2/readme.md
+      - MiniProject3: mini-projects/FDP2022/mp3/readme.md
+      - MiniProject4: mini-projects/FDP2022/mp4/readme.md

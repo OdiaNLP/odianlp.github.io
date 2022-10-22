@@ -1,6 +1,6 @@
-# Odisha ML Summer School 2022
+<h1 align="center"> Odisha ML Summer School</h1>
 
-## About
+## About Odisha ML Summer School in 2022 
 This repository contains the instructions, guidelines, place holder for storing the artifacts of AI Machine Learning Summer School (Odisha ML Summer School in short) organized by the <a href="https://www.ocfodisha.org/">Odisha Corporate Foundation (OCF)</a>  and <a href="https://www.odisha.ml/">Odias in Machine Learning (OdiaML)</a> in 2022.
 
 ### Instructions for the participants
