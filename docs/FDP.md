@@ -2,7 +2,7 @@
 
 ## About Faculty Development Program in 2022 
 
-This repository contains the instructions, guidelines, place holder for storing the artifacts of AI Machine Learning Faculty Development Program (VSSUT-) organized by the VSSUT and Odias in Machine Learning (OdiaML) in 2022.
+This repository contains the instructions, guidelines, place holder for storing the artifacts of AI Machine Learning Faculty Development Program (VSSUT-OIML-FDP in short) organized by the <a href="https://www.vssut.ac.in/"> Veer Surendra Sai University of Technology (VSSUT) and <a href="https://www.odisha.ml/">Odias in Machine Learning (OdiaML) in 2022.
 
 
 ### Instructions for the participants
